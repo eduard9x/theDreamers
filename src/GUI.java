@@ -45,7 +45,6 @@ public class GUI implements ActionListener{
 
     public GUI(){
 
-        //frame.setLayout(new FlowLayout());
 
         // Sets the text and initiates the objects for the buttons
         playButton = new JButton("PLAY");
@@ -68,14 +67,12 @@ public class GUI implements ActionListener{
         // start panel with play button and exit button
         // for frame
         JPanel frame = new JPanel();
-        //startPanel.setLayout(new BoxLayout(startPanel,BoxLayout.X_AXIS));
         frame.add(playButton);
         playButton.setPreferredSize(new Dimension(200, 100));
         frame.add(exitButton);
         exitButton.setPreferredSize(new Dimension(200, 100));
         frame.add(howToPlay);
         howToPlay.setPreferredSize(new Dimension(200, 100));
-
 
         start = new javax.swing.JLabel();
         //frame 1 animation of the dices
