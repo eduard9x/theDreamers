@@ -117,15 +117,15 @@ public class GUI implements ActionListener{
     // Initiates the window to display it
     public void startGui(){
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Sets default close operation (when user clicks X)
-        frame.setSize(1000, 700); // Sets a default window size.
+        frame.setSize(1000, 750); // Sets a default window size.
         frame.setVisible(true); // Sets the window to be visible.
         
         frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Sets default close operation (when user clicks X)
-        frame2.setSize(1000, 700); // Sets a default window size.
+        frame2.setSize(1000, 750); // Sets a default window size.
         frame2.setVisible(false);
 
         frame3.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Sets default close operation (when user clicks X)
-        frame3.setSize(1000, 700); // Sets a default window size.
+        frame3.setSize(1000, 750); // Sets a default window size.
         frame3.setVisible(false);
     }
 
