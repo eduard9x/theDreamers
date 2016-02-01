@@ -4,11 +4,17 @@
     <list default="true" id="b2878fcf-e20c-403c-bd59-5adb858e5df2" name="Default" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/theDreamers/Main$1.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/Main.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/Main.class" />
 =======
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/Main.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> parent of 94c077d... images
 =======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/Main.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/Main.class" />
@@ -53,12 +59,17 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0">
               <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
 =======
             <state vertical-scroll-proportion="0.16354345">
               <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
+=======
+            <state vertical-scroll-proportion="0.3321976">
+              <caret line="22" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="1" />
+>>>>>>> parent of 94c077d... images
 =======
             <state vertical-scroll-proportion="0.3321976">
               <caret line="22" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="1" />
@@ -126,11 +137,17 @@
     <panes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> parent of 94c077d... images
 =======
       <pane id="PackagesPane" />
       <pane id="Scratches" />
@@ -490,6 +507,7 @@
       <workItem from="1454336460207" duration="1418000" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1454344254019" duration="874000" />
       <workItem from="1454346101956" duration="40000" />
       <workItem from="1454346166335" duration="3000" />
@@ -498,16 +516,22 @@
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
 =======
 >>>>>>> parent of 94c077d... images
+=======
+>>>>>>> parent of 94c077d... images
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="6993000" />
 =======
     <option name="totallyTimeSpent" value="7632000" />
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
+=======
+    <option name="totallyTimeSpent" value="6076000" />
+>>>>>>> parent of 94c077d... images
 =======
     <option name="totallyTimeSpent" value="6076000" />
 >>>>>>> parent of 94c077d... images
@@ -559,6 +583,7 @@
         <state vertical-scroll-proportion="0.0">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
           <folding />
 =======
@@ -586,6 +611,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
+=======
+>>>>>>> parent of 94c077d... images
 =======
 >>>>>>> parent of 94c077d... images
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -787,12 +814,17 @@
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
 =======
         <state vertical-scroll-proportion="0.16354345">
           <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
+=======
+        <state vertical-scroll-proportion="0.3321976">
+          <caret line="22" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="1" />
+>>>>>>> parent of 94c077d... images
 =======
         <state vertical-scroll-proportion="0.3321976">
           <caret line="22" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="1" />
