@@ -4,6 +4,7 @@
     <list default="true" id="b2878fcf-e20c-403c-bd59-5adb858e5df2" name="Default" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/theDreamers/Main$1.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" />
 <<<<<<< HEAD
@@ -17,9 +18,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 >>>>>>> parent of 94c077d... images
 =======
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 >>>>>>> parent of 25f9cd5... netbeans support
 >>>>>>> Stashed changes
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/Main.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> parent of 94c077d... images
+>>>>>>> origin/master
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI.java" afterPath="$PROJECT_DIR$/src/GUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -66,6 +74,7 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0">
               <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
 =======
@@ -78,10 +87,16 @@
               <caret line="22" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="1" />
 >>>>>>> parent of 94c077d... images
 =======
+<<<<<<< HEAD
             <state vertical-scroll-proportion="2.6064737">
               <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
 >>>>>>> parent of 25f9cd5... netbeans support
 >>>>>>> Stashed changes
+=======
+            <state vertical-scroll-proportion="0.3321976">
+              <caret line="22" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="1" />
+>>>>>>> parent of 94c077d... images
+>>>>>>> origin/master
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,6 +160,7 @@
     <panes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <pane id="Scope" />
       <pane id="PackagesPane" />
@@ -157,8 +173,15 @@
       <pane id="Scope" />
 >>>>>>> parent of 94c077d... images
 =======
+<<<<<<< HEAD
 >>>>>>> parent of 25f9cd5... netbeans support
 >>>>>>> Stashed changes
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> parent of 94c077d... images
+>>>>>>> origin/master
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -517,6 +540,7 @@
       <workItem from="1454336460207" duration="1418000" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1454344254019" duration="874000" />
       <workItem from="1454346101956" duration="40000" />
       <workItem from="1454346166335" duration="3000" />
@@ -527,12 +551,17 @@
 <<<<<<< Updated upstream
 >>>>>>> parent of 94c077d... images
 =======
+<<<<<<< HEAD
 >>>>>>> parent of 25f9cd5... netbeans support
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 94c077d... images
+>>>>>>> origin/master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="6993000" />
@@ -544,9 +573,14 @@
     <option name="totallyTimeSpent" value="6076000" />
 >>>>>>> parent of 94c077d... images
 =======
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="3638000" />
 >>>>>>> parent of 25f9cd5... netbeans support
 >>>>>>> Stashed changes
+=======
+    <option name="totallyTimeSpent" value="6076000" />
+>>>>>>> parent of 94c077d... images
+>>>>>>> origin/master
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="6" />
@@ -595,6 +629,7 @@
         <state vertical-scroll-proportion="0.0">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
           <folding />
 =======
@@ -622,6 +657,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
+=======
+>>>>>>> parent of 94c077d... images
 =======
 >>>>>>> parent of 94c077d... images
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -829,6 +866,7 @@
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
 =======
@@ -841,12 +879,18 @@
           <caret line="22" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="1" />
 >>>>>>> parent of 94c077d... images
 =======
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.6064737">
           <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
 >>>>>>> parent of 25f9cd5... netbeans support
 >>>>>>> Stashed changes
+=======
+        <state vertical-scroll-proportion="0.3321976">
+          <caret line="22" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="1" />
+>>>>>>> parent of 94c077d... images
+>>>>>>> origin/master
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
