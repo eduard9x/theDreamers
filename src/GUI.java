@@ -8,19 +8,17 @@
  *
  * @author Harvey
  */
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.net.URL;
+
 
 
 public class GUI implements ActionListener{
 
     // Initiates the JFrame Object. Gives it a title.
-    public static JFrame frame = new JFrame("Start Screen");
+    JFrame frame = new JFrame("Start Screen");
     JFrame frame2 = new JFrame("Game Screen");
     JFrame frame3 = new JFrame("Conlusion Screen");
 
@@ -40,8 +38,6 @@ public class GUI implements ActionListener{
 
     
     JFrame message = new JFrame(); // for pop messages!
-
-
 
     public GUI(){
 
@@ -80,8 +76,6 @@ public class GUI implements ActionListener{
         start = new javax.swing.JLabel();
         //frame 1 animation of the dices
         start.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.png")));
-
-
 
         //for frame 2
         JPanel frame2 = new JPanel();

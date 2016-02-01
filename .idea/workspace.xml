@@ -6,14 +6,20 @@
 <<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/theDreamers/Main$1.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/Main.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/Main.class" />
 =======
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
 =======
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/Main.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 >>>>>>> parent of 94c077d... images
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> parent of 25f9cd5... netbeans support
+>>>>>>> Stashed changes
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI.java" afterPath="$PROJECT_DIR$/src/GUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -42,8 +48,15 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
               <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
               <folding />
+=======
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#431#0" expanded="true" />
+              </folding>
+>>>>>>> parent of 25f9cd5... netbeans support
             </state>
           </provider>
         </entry>
@@ -60,9 +73,15 @@
               <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
 =======
+<<<<<<< Updated upstream
             <state vertical-scroll-proportion="0.3321976">
               <caret line="22" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="1" />
 >>>>>>> parent of 94c077d... images
+=======
+            <state vertical-scroll-proportion="2.6064737">
+              <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
+>>>>>>> parent of 25f9cd5... netbeans support
+>>>>>>> Stashed changes
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,10 +151,14 @@
       <pane id="Scratches" />
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
 =======
+<<<<<<< Updated upstream
       <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
 >>>>>>> parent of 94c077d... images
+=======
+>>>>>>> parent of 25f9cd5... netbeans support
+>>>>>>> Stashed changes
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -235,6 +258,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -276,6 +300,8 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
+=======
+>>>>>>> parent of 25f9cd5... netbeans support
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -291,6 +317,7 @@
       <envs />
       <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="myFilePath" />
@@ -454,13 +481,12 @@
       <tasks />
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
+=======
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+>>>>>>> parent of 25f9cd5... netbeans support
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
     <list size="1">
@@ -485,6 +511,7 @@
       <workItem from="1453747165880" duration="49000" />
       <workItem from="1453831408137" duration="1897000" />
       <workItem from="1453852902381" duration="1430000" />
+<<<<<<< HEAD
       <workItem from="1453988915882" duration="328000" />
       <workItem from="1453990228120" duration="692000" />
       <workItem from="1454336460207" duration="1418000" />
@@ -497,7 +524,11 @@
       <workItem from="1454343649045" duration="1556000" />
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
 =======
+<<<<<<< Updated upstream
 >>>>>>> parent of 94c077d... images
+=======
+>>>>>>> parent of 25f9cd5... netbeans support
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -509,8 +540,13 @@
     <option name="totallyTimeSpent" value="7632000" />
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
 =======
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="6076000" />
 >>>>>>> parent of 94c077d... images
+=======
+    <option name="totallyTimeSpent" value="3638000" />
+>>>>>>> parent of 25f9cd5... netbeans support
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="6" />
@@ -643,6 +679,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+=======
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+>>>>>>> parent of 25f9cd5... netbeans support
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -759,6 +798,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#431#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/awt/Container.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3321976">
@@ -767,14 +816,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3321976">
-          <caret line="775" column="19" selection-start-line="775" selection-start-column="19" selection-end-line="775" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -794,9 +836,17 @@
           <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
 >>>>>>> 94c077d9f396e256daddd5a3e925a6ac819f31ee
 =======
+<<<<<<< Updated upstream
         <state vertical-scroll-proportion="0.3321976">
           <caret line="22" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="1" />
 >>>>>>> parent of 94c077d... images
+=======
+    <entry file="file://$PROJECT_DIR$/src/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.6064737">
+          <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
+>>>>>>> parent of 25f9cd5... netbeans support
+>>>>>>> Stashed changes
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
