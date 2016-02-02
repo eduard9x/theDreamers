@@ -35,6 +35,9 @@ public class GUI implements ActionListener{
     javax.swing.JLabel start;
     javax.swing.JLabel labelFrame2;
     javax.swing.JLabel labelFrame3;
+    javax.swing.JLabel box1,box2,box3,box4,box5;
+
+
 
     
     JFrame message = new JFrame(); // for pop messages!
@@ -76,12 +79,34 @@ public class GUI implements ActionListener{
         start = new javax.swing.JLabel();
         //frame 1 animation of the dices
         start.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.png")));
+        box1 = new javax.swing.JLabel();
+        //frame 1 animation of the dices
+        box1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
+        box2 = new javax.swing.JLabel();
+        //frame 1 animation of the dices
+        box2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
+        box3 = new javax.swing.JLabel();
+        //frame 1 animation of the dices
+        box3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character.gif")));
+        box4 = new javax.swing.JLabel();
+        //frame 1 animation of the dices
+        box4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
+        box5 = new javax.swing.JLabel();
+        //frame 1 animation of the dices
+        box5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
 
         //for frame 2
         JPanel frame2 = new JPanel();
         frame2.add(nextFrame);
         labelFrame2 = new javax.swing.JLabel("Your in Frame 2");
         frame2.add(labelFrame2);
+        frame2.add(box1);
+        frame2.add(box2);
+        frame2.add(box3);
+        frame2.add(box4);
+        frame2.add(box5);
+
+
 
         //for frame 3
         JPanel frame3 = new JPanel();
