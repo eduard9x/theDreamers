@@ -5,30 +5,28 @@
  */
 
 /**
- *
  * @author Harvey
  */
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-
-public class GUI implements ActionListener{
+public class GUI extends Board implements ActionListener {
 
     // Initiates the JFrame Object. Gives it a title.
     JFrame frame = new JFrame("Start Screen");
     JFrame frame2 = new JFrame("Game Screen");
-    JFrame frame3 = new JFrame("Conlusion Screen");
+    JFrame frame3 = new JFrame("Conclusion Screen");
 
     //Buttons for frame
-    JButton howToPlay,playButton, exitButton; // The buttons for "Throw", "Score" and "New Game"
+    JButton howToPlay, playButton, exitButton; // The buttons for "Throw", "Score" and "New Game"
     // buttons for frame 2
-    JButton nextFrame;
+    JButton nextFrame, rollDice;
     // buttons for frame 3
     JButton goBackToMenu;
-
 
 
     // Text fields which are shown on the JFrame
@@ -36,10 +34,11 @@ public class GUI implements ActionListener{
     javax.swing.JLabel labelFrame2;
     javax.swing.JLabel labelFrame3;
 
-    
+
     JFrame message = new JFrame(); // for pop messages!
 
-    public GUI(){
+    public GUI() {
+        //todo need to add a required textfield for the player name
 
         //frame.setLayout(new FlowLayout());
 
@@ -48,7 +47,9 @@ public class GUI implements ActionListener{
         exitButton = new JButton("QUIT");
         howToPlay = new JButton("HOW TO PLAY");
         nextFrame = new JButton("NEXT FRAME");
+        rollDice = new JButton("ROLL THE DICE");
         goBackToMenu = new JButton("BACK TO MENU");
+
 
         // The main container for the JFrames
         //container for frame
@@ -79,6 +80,7 @@ public class GUI implements ActionListener{
 
         //for frame 2
         JPanel frame2 = new JPanel();
+        frame2.add(rollDice);
         frame2.add(nextFrame);
         labelFrame2 = new javax.swing.JLabel("Your in Frame 2");
         frame2.add(labelFrame2);
@@ -88,7 +90,7 @@ public class GUI implements ActionListener{
         frame3.add(goBackToMenu);
         labelFrame3 = new javax.swing.JLabel("Your in Frame 3");
         frame3.add(labelFrame3);
-        
+
         // Adds the fields to the panel
         // Adds all the panels to the container
         container.add(start);
@@ -101,19 +103,20 @@ public class GUI implements ActionListener{
         playButton.addActionListener(this);
         exitButton.addActionListener(this);
         nextFrame.addActionListener(this);
+        rollDice.addActionListener(this);
         goBackToMenu.addActionListener(this);
-        
+
 
         // Starts up the UI
         startGui();
     }
 
     // Initiates the window to display it
-    public void startGui(){
+    public void startGui() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Sets default close operation (when user clicks X)
         frame.setSize(1000, 750); // Sets a default window size.
         frame.setVisible(true); // Sets the window to be visible.
-        
+
         frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Sets default close operation (when user clicks X)
         frame2.setSize(1000, 750); // Sets a default window size.
         frame2.setVisible(false);
@@ -126,33 +129,38 @@ public class GUI implements ActionListener{
     // Code behind the buttons. This is called when the 4 buttons are clicked
     @Override
     public void actionPerformed(ActionEvent e) {
+
         //play button
-        if(e.getActionCommand() == "PLAY"){
-                frame2.setVisible(true);
+        if (e.getActionCommand() == "PLAY") {
+
+            Game newGame = new Game();
+
+            frame2.setVisible(true);
             frame.setVisible(false);
-        }
-        else if (e.getActionCommand() == "HOW TO PLAY"){ 
-                //frame2.setVisible(false);
-            JOptionPane.showMessageDialog(null,"Include how to play intructions here");
-        } 
-        else if (e.getActionCommand() == "QUIT"){
+        } else if (e.getActionCommand() == "HOW TO PLAY") {
+            //frame2.setVisible(false);
+            JOptionPane.showMessageDialog(null, "Include how to play intructions here");
+        } else if (e.getActionCommand() == "QUIT") {
             int input = JOptionPane.showOptionDialog(null, "Press CANCEL or OK to exit!", "Are you sure?", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
-                if(input == JOptionPane.OK_OPTION)
-                {
-                    System.exit(0);
-            } 
-        }
-        else if(e.getActionCommand() == "NEXT FRAME"){
+            if (input == JOptionPane.OK_OPTION) {
+                System.exit(0);
+            }
+        } else if (e.getActionCommand() == "NEXT FRAME") {
             frame.setVisible(false);
             frame2.setVisible(false);
             frame3.setVisible(true);
-        }
-        else if(e.getActionCommand() == "BACK TO MENU"){
+        } else if (e.getActionCommand() == "BACK TO MENU") {
             frame.setVisible(true);
             frame2.setVisible(false);
             frame3.setVisible(false);
+        } else if (e.getActionCommand() == "ROLL THE DICE") {
+
+            int randomNumber = 0;
+            randomNumber = rollDice();
+            JOptionPane.showMessageDialog(null, randomNumber);
+
         }
-        
+
     }
-   
+
 }
