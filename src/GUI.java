@@ -81,25 +81,90 @@ public class GUI extends Board implements ActionListener {
         //for frame 2
         JPanel frame2 = new JPanel();
 
-/*
+/* Start of creating the board */
+
+        JButton ordinaryButton;
+        int row = 10, column = 10;
         frame2.setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.insets = new Insets(3, 3, 3, 3);
 
-        for(int i=0;i<5;i++){
-            JButton ordinaryButton = new JButton();
-            gbc.gridx = i;
-            gbc.gridy = 1;
-            gbc.gridwidth = 1;
-            frame2.add(ordinaryButton, gbc); //add in the frame
-        }
-*/
+        //todo need to make j=0 as now we have other buttons on the first line
+        //todo need to remove magic numbers later and replace them with column and row
+        for (int j = 1; j <= row; j++) {
+            for (int i = 0; i < column; i++) {
 
-        frame2.add(rollDice);
-        frame2.add(nextFrame);
-        labelFrame2 = new javax.swing.JLabel("Your in Frame 2");
-        frame2.add(labelFrame2);
+                ordinaryButton = new JButton();
+
+//                todo need to delete this after creating the list
+//                int number = (j - 1) * 10 + i;
+//                String text = Integer.toString(number);
+//                ordinaryButton.setText(text);
+
+                if (i == column - 1 && j == row) doActiveTile(ordinaryButton);
+
+                //todo need to either create 4 lists to add the buttons in or one list with buttons in order
+                //todo or we can do a matrix with 4 lines and 10 columns.
+                if (j == 1) {//top line
+                    gbc.ipady = 30;
+                    gbc.gridx = i;
+                    gbc.gridy = j;
+                    gbc.gridwidth = 1;
+                    addToList(ordinaryButton,TOP);
+                    frame2.add(ordinaryButton, gbc); //add in the frame
+                } else {
+                    if (j == 10) {//bottom line
+                        gbc.ipady = 30;
+                        gbc.gridx = i;
+                        gbc.gridy = j;
+                        gbc.gridwidth = 1;
+                        addToList(ordinaryButton,BOTTOM);
+                        frame2.add(ordinaryButton, gbc); //add in the frame
+                    } else {
+                        if (i == 0) { // left-hand side column
+                            gbc.ipady = 30;
+                            gbc.gridx = i;
+                            gbc.gridy = j;
+                            gbc.gridwidth = 1;
+                            addToList(ordinaryButton,LEFT);
+                            frame2.add(ordinaryButton, gbc); //add in the frame
+                        } else {
+                            if (i == 9) { // right-hand side column
+                                gbc.ipady = 30;
+                                gbc.gridx = i;
+                                gbc.gridy = j;
+                                gbc.gridwidth = 1;
+                                addToList(ordinaryButton,RIGHT);
+                                frame2.add(ordinaryButton, gbc); //add in the frame
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+/* End of creating the board */
+
+        /* adding constraints for roll dice and next frame */
+        gbc.ipady = 30;
+        gbc.gridx = 3;
+        gbc.gridy = 5;
+        gbc.gridwidth = 2;
+        frame2.add(rollDice, gbc); //add in the frame
+
+//todo need to remove magic numbers later and replace them with column and row
+
+        gbc.ipady = 30;
+        gbc.gridx = 6;
+        gbc.gridy = 5;
+        gbc.gridwidth = 2;
+        frame2.add(nextFrame, gbc); //add in the frame
+        /* END OF adding constraints for roll dice and next frame */
+
 
         //for frame 3
         JPanel frame3 = new JPanel();
@@ -128,6 +193,7 @@ public class GUI extends Board implements ActionListener {
     }
 
     // Initiates the window to display it
+
     public void startGui() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Sets default close operation (when user clicks X)
         frame.setSize(1000, 750); // Sets a default window size.
