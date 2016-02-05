@@ -40,7 +40,7 @@ public class GUI extends Board implements ActionListener {
     public GUI() {
         //todo need to add a required textfield for the player name
 
-        //frame.setLayout(new FlowLayout());
+//        frame.setLayout(new FlowLayout());
 
         // Sets the text and initiates the objects for the buttons
         playButton = new JButton("PLAY");
@@ -65,7 +65,7 @@ public class GUI extends Board implements ActionListener {
         // start panel with play button and exit button
         // for frame
         JPanel frame = new JPanel();
-        //startPanel.setLayout(new BoxLayout(startPanel,BoxLayout.X_AXIS));
+//        frame.setLayout(new BoxLayout(frame,BoxLayout.X_AXIS));
         frame.add(playButton);
         playButton.setPreferredSize(new Dimension(200, 100));
         frame.add(exitButton);
@@ -80,6 +80,22 @@ public class GUI extends Board implements ActionListener {
 
         //for frame 2
         JPanel frame2 = new JPanel();
+
+/*
+        frame2.setLayout(new GridBagLayout());
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        gbc.insets = new Insets(3, 3, 3, 3);
+
+        for(int i=0;i<5;i++){
+            JButton ordinaryButton = new JButton();
+            gbc.gridx = i;
+            gbc.gridy = 1;
+            gbc.gridwidth = 1;
+            frame2.add(ordinaryButton, gbc); //add in the frame
+        }
+*/
+
         frame2.add(rollDice);
         frame2.add(nextFrame);
         labelFrame2 = new javax.swing.JLabel("Your in Frame 2");
