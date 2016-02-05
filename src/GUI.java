@@ -102,6 +102,7 @@ public class GUI extends Board implements ActionListener {
 //                String text = Integer.toString(number);
 //                ordinaryButton.setText(text);
 
+
                 if (i == column - 1 && j == row) doActiveTile(ordinaryButton);
 
                 //todo need to either create 4 lists to add the buttons in or one list with buttons in order
@@ -112,6 +113,7 @@ public class GUI extends Board implements ActionListener {
                     gbc.gridy = j;
                     gbc.gridwidth = 1;
                     addToList(ordinaryButton,TOP);
+                    ordinaryButton.setText("t");
                     frame2.add(ordinaryButton, gbc); //add in the frame
                 } else {
                     if (j == 10) {//bottom line
@@ -120,6 +122,7 @@ public class GUI extends Board implements ActionListener {
                         gbc.gridy = j;
                         gbc.gridwidth = 1;
                         addToList(ordinaryButton,BOTTOM);
+                        ordinaryButton.setText("b");
                         frame2.add(ordinaryButton, gbc); //add in the frame
                     } else {
                         if (i == 0) { // left-hand side column
@@ -128,6 +131,7 @@ public class GUI extends Board implements ActionListener {
                             gbc.gridy = j;
                             gbc.gridwidth = 1;
                             addToList(ordinaryButton,LEFT);
+                            ordinaryButton.setText("l");
                             frame2.add(ordinaryButton, gbc); //add in the frame
                         } else {
                             if (i == 9) { // right-hand side column
@@ -136,6 +140,7 @@ public class GUI extends Board implements ActionListener {
                                 gbc.gridy = j;
                                 gbc.gridwidth = 1;
                                 addToList(ordinaryButton,RIGHT);
+                                ordinaryButton.setText("r");
                                 frame2.add(ordinaryButton, gbc); //add in the frame
                             }
                         }
@@ -190,6 +195,7 @@ public class GUI extends Board implements ActionListener {
 
         // Starts up the UI
         startGui();
+        print();
     }
 
     // Initiates the window to display it
