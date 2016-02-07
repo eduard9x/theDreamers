@@ -82,30 +82,30 @@ public class GUI extends Board implements ActionListener {
         start.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.png")));
         box1 = new javax.swing.JLabel();
         //frame 1 animation of the dices
-        box1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
-        box2 = new javax.swing.JLabel();
+//        box1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
+//        box2 = new javax.swing.JLabel();
         //frame 1 animation of the dices
-        box2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
+//        box2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
         box3 = new javax.swing.JLabel();
         //frame 1 animation of the dices
-        box3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character.gif")));
-        box4 = new javax.swing.JLabel();
+        box3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character-small.gif")));
+//        box4 = new javax.swing.JLabel();
         //frame 1 animation of the dices
-        box4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
-        box5 = new javax.swing.JLabel();
+//        box4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
+//        box5 = new javax.swing.JLabel();
         //frame 1 animation of the dices
-        box5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
+//        box5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
 
         //for frame 2
         JPanel frame2 = new JPanel();
         frame2.add(nextFrame);
 //        labelFrame2 = new javax.swing.JLabel("Your in Frame 2");
 //        frame2.add(labelFrame2);
-        frame2.add(box1);
-        frame2.add(box2);
+//        frame2.add(box1);
+//        frame2.add(box2);
         frame2.add(box3);
-        frame2.add(box4);
-        frame2.add(box5);
+//        frame2.add(box4);
+//        frame2.add(box5);
 
 /* Start of creating the board */
 

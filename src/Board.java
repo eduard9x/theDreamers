@@ -87,6 +87,9 @@ public class Board {
                 + "'>regular </div><div style='background-color:#336699;"
                 + "color:#fff;display:inline;'>special</div>"
                 + "<div style='display:inline;'> regular again");
+
+        gameBoard[0][4].setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character-small.gif")));
+
     }
 
 }
