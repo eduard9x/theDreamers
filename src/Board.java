@@ -178,9 +178,7 @@ public class Board{
         */
     }
 
-<<<<<<< HEAD
 
-=======
     public void Quiz() {
 
 //        todo need to add questions and answers nested under buttons
@@ -202,5 +200,5 @@ public class Board{
             System.out.println("Wrong");
         }
     }
->>>>>>> 5811ab22ce88f4dddb4b8bd5b1715e07ce672860
+
 }

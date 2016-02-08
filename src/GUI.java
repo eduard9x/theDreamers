@@ -34,16 +34,9 @@ public class GUI extends Board implements ActionListener {
     // Text fields which are shown on the JFrame
     javax.swing.JLabel loading;
     javax.swing.JLabel start;
-<<<<<<< HEAD
-    javax.swing.JLabel labelFrame3;
     javax.swing.JLabel characterTest;
-=======
     javax.swing.JTextField playerName;
-    javax.swing.JLabel labelFrame2;
     javax.swing.JLabel labelFrame3;
-    javax.swing.JLabel box1,box2,box3,box4,box5;
->>>>>>> 5811ab22ce88f4dddb4b8bd5b1715e07ce672860
-
 
     JFrame message = new JFrame(); // for pop messages!
 
@@ -73,7 +66,6 @@ public class GUI extends Board implements ActionListener {
         frame3.setContentPane(container3);
 
 
-
         loading = new javax.swing.JLabel();
         loading.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hexLoader.gif")));
 
@@ -86,11 +78,9 @@ public class GUI extends Board implements ActionListener {
         playerName.setPreferredSize(new Dimension(100,50));
 
         JPanel frame = new JPanel();
-<<<<<<< HEAD
 
-=======
         frame.add(playerName);
->>>>>>> 5811ab22ce88f4dddb4b8bd5b1715e07ce672860
+
         frame.add(playButton);
         playButton.setPreferredSize(new Dimension(200, 100));
         frame.add(exitButton);
@@ -278,66 +268,12 @@ public class GUI extends Board implements ActionListener {
             randomNumber = rollDice();
             doMove(randomNumber);
             JOptionPane.showMessageDialog(null, randomNumber);
-            
-<<<<<<< HEAD
-//            Quiz();
-=======
-            Quiz();
-<<<<<<< Updated upstream
-            
-=======
-            frame2.setVisible(false);
->>>>>>> 5811ab22ce88f4dddb4b8bd5b1715e07ce672860
 
->>>>>>> Stashed changes
+            Quiz();
+
         }
     }
-<<<<<<< Updated upstream
-    
-    
-=======
-    public void Quiz() {
-  
-        JFrame quizframe = new JFrame("Quiz");
-        JPanel quizpanel = new JPanel();
-        JLabel quizQuestion = new JLabel("What is the Answer");
-        JButton quizanswerButton = new JButton("Burak");
-        JButton quizanswerButton2 = new JButton("lol");
-        JButton quizcorrectAnswer = new JButton("this one");
-        JButton quizanswerButton3 = new JButton("lol");
-        
-        
-        quizframe.setLayout(new FlowLayout());
-        quizframe.setVisible(true);
-        quizframe.setSize(1000, 500);
-        quizframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
 
-       
-        quizpanel.add(quizQuestion);
-        quizpanel.add(quizanswerButton);
-        quizpanel.add(quizanswerButton2);
-        quizpanel.add(quizcorrectAnswer);
-        quizpanel.add(quizanswerButton3);
-        quizframe.add(quizpanel);
-        
-        quizcorrectAnswer.addActionListener(new ActionListener()//throw button will trigger the following lines of code
-                {
-                @Override
-                public void actionPerformed(ActionEvent e)
-                {
-                    if (e.getActionCommand() == "this one")
-                    {
-                        //JOptionPane.showOptionDialog(null, "Correct!", "Next Question", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
-                        //JOptionPane.showMessageDialog(null, "Correct");
-                        quizframe.setVisible(false);
-                        frame2.setVisible(true);
-                        
-                    }
-                }
-                });
-}
->>>>>>> Stashed changes
 }
 
 
