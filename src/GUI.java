@@ -31,19 +31,14 @@ public class GUI extends Board implements ActionListener {
 
     // Text fields which are shown on the JFrame
     javax.swing.JLabel start;
-    javax.swing.JLabel labelFrame2;
     javax.swing.JLabel labelFrame3;
-    javax.swing.JLabel box1,box2,box3,box4,box5;
-
-
+    javax.swing.JLabel characterTest;
 
 
     JFrame message = new JFrame(); // for pop messages!
 
     public GUI() {
         //todo need to add a required textfield for the player name
-
-//        frame.setLayout(new FlowLayout());
 
         // Sets the text and initiates the objects for the buttons
         playButton = new JButton("PLAY");
@@ -68,7 +63,7 @@ public class GUI extends Board implements ActionListener {
         // start panel with play button and exit button
         // for frame
         JPanel frame = new JPanel();
-//        frame.setLayout(new BoxLayout(frame,BoxLayout.X_AXIS));
+
         frame.add(playButton);
         playButton.setPreferredSize(new Dimension(200, 100));
         frame.add(exitButton);
@@ -76,36 +71,19 @@ public class GUI extends Board implements ActionListener {
         frame.add(howToPlay);
         howToPlay.setPreferredSize(new Dimension(200, 100));
 
-
+        //board image start screen
         start = new javax.swing.JLabel();
-        //frame 1 animation of the dices
         start.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.png")));
-        box1 = new javax.swing.JLabel();
-        //frame 1 animation of the dices
-//        box1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
-//        box2 = new javax.swing.JLabel();
-        //frame 1 animation of the dices
-//        box2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
-        box3 = new javax.swing.JLabel();
-        //frame 1 animation of the dices
-        box3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character-small.gif")));
-//        box4 = new javax.swing.JLabel();
-        //frame 1 animation of the dices
-//        box4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
-//        box5 = new javax.swing.JLabel();
-        //frame 1 animation of the dices
-//        box5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png")));
+
+        //character test background gif
+        characterTest = new javax.swing.JLabel();
+        characterTest.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character-small.gif")));
 
         //for frame 2
         JPanel frame2 = new JPanel();
         frame2.add(nextFrame);
-//        labelFrame2 = new javax.swing.JLabel("Your in Frame 2");
-//        frame2.add(labelFrame2);
-//        frame2.add(box1);
-//        frame2.add(box2);
-        frame2.add(box3);
-//        frame2.add(box4);
-//        frame2.add(box5);
+        frame2.add(characterTest);
+
 
 /* Start of creating the board */
 
@@ -122,12 +100,6 @@ public class GUI extends Board implements ActionListener {
             for (int i = 0; i < column; i++) {
 
                 ordinaryButton = new JButton();
-
-//                todo need to delete this after creating the list
-//                int number = (j - 1) * 10 + i;
-//                String text = Integer.toString(number);
-//                ordinaryButton.setText(text);
-
 
                 if (i == column - 1 && j == row) doActiveTile(ordinaryButton);
 
@@ -270,9 +242,10 @@ public class GUI extends Board implements ActionListener {
 
             int randomNumber = 0;
             randomNumber = rollDice();
+            doMove(randomNumber);
             JOptionPane.showMessageDialog(null, randomNumber);
             
-            Quiz();
+//            Quiz();
 
         }
 
