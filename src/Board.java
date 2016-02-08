@@ -1,10 +1,10 @@
+
 import javax.swing.*;
 import java.awt.*;
 
 public class Board{
 
 //    todo manage the board here
-
     public final String LEFT = "LEFT", RIGHT = "RIGHT", TOP = "TOP", BOTTOM = "BOTTOM";
     private int leftX, rightX, topX, bottomX, leftY, rightY, topY, bottomY, playerX, playerY;
     private JButton[][] gameBoard;
@@ -13,7 +13,6 @@ public class Board{
 //    square = the position on the board; when reaching 40 it means it finished the first stage
 //    stage = there will be two stages: 1 - College, 2 - University. When the stage increases, the difficulty increases as well.
     javax.swing.JLabel characterTest;
-
 
     public Board() {
         characterTest = new javax.swing.JLabel();
@@ -41,7 +40,6 @@ public class Board{
         int number = (int) Math.floor(Math.random() * 6) + 1;
 
         //todo need to make the player move "number" tiles further
-
         return number;
     }
 
@@ -55,7 +53,6 @@ public class Board{
     public void addToList(JButton createdTile, String list) {
 
         //todo might need to add I and J in the method, or make a list instead of a matrix
-
         if (list.equals(LEFT)) {
             gameBoard[leftX][leftY] = createdTile;
             leftX++;
@@ -69,7 +66,6 @@ public class Board{
             gameBoard[bottomX][bottomY] = createdTile;
             bottomY++;
         }
-
 
     }
 
@@ -182,5 +178,29 @@ public class Board{
         */
     }
 
+<<<<<<< HEAD
 
+=======
+    public void Quiz() {
+
+//        todo need to add questions and answers nested under buttons
+       
+        //todo need to create an array that holds the questions
+        Object[] options = {"1", "Hero", "3", "4"};
+        int[] answers = {0, 1, 2, 3};
+        /* Make sure the answers and options are in the correct order - example Correct is second - answers = 1 */
+        
+        int n = JOptionPane.showOptionDialog(null, "What is 1 + 1 ?", "A Silly Question", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+
+        if (n == answers[1]) {
+            System.out.println("Correct");
+        } else if (n == answers[0]) {
+            System.out.println("Wrong");
+        } else if (n == answers[2]) {
+            System.out.println("Wrong");
+        } else if (n == answers[3]) {
+            System.out.println("Wrong");
+        }
+    }
+>>>>>>> 5811ab22ce88f4dddb4b8bd5b1715e07ce672860
 }

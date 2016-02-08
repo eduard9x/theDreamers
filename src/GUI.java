@@ -12,11 +12,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.TimerTask;
 
 
 public class GUI extends Board implements ActionListener {
 
     // Initiates the JFrame Object. Gives it a title.
+    JFrame spalshScreen = new JFrame("Loading Screen");
     JFrame frame = new JFrame("Start Screen");
     JFrame frame2 = new JFrame("Game Screen");
     JFrame frame3 = new JFrame("Conclusion Screen");
@@ -30,15 +32,22 @@ public class GUI extends Board implements ActionListener {
 
 
     // Text fields which are shown on the JFrame
+    javax.swing.JLabel loading;
     javax.swing.JLabel start;
+<<<<<<< HEAD
     javax.swing.JLabel labelFrame3;
     javax.swing.JLabel characterTest;
+=======
+    javax.swing.JTextField playerName;
+    javax.swing.JLabel labelFrame2;
+    javax.swing.JLabel labelFrame3;
+    javax.swing.JLabel box1,box2,box3,box4,box5;
+>>>>>>> 5811ab22ce88f4dddb4b8bd5b1715e07ce672860
 
 
     JFrame message = new JFrame(); // for pop messages!
 
     public GUI() {
-        //todo need to add a required textfield for the player name
 
         // Sets the text and initiates the objects for the buttons
         playButton = new JButton("PLAY");
@@ -51,6 +60,9 @@ public class GUI extends Board implements ActionListener {
 
         // The main container for the JFrames
         //container for frame
+
+        JPanel welcome = new JPanel();
+        spalshScreen.setContentPane(welcome);
         JPanel container = new JPanel();
         frame.setContentPane(container);
         //container for frame 2
@@ -60,10 +72,25 @@ public class GUI extends Board implements ActionListener {
         JPanel container3 = new JPanel();
         frame3.setContentPane(container3);
 
+
+
+        loading = new javax.swing.JLabel();
+        loading.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hexLoader.gif")));
+
         // start panel with play button and exit button
         // for frame
-        JPanel frame = new JPanel();
 
+        playerName = new javax.swing.JTextField();
+        playerName.setText("Player");
+        playerName.setLocation(100,100);
+        playerName.setPreferredSize(new Dimension(100,50));
+
+        JPanel frame = new JPanel();
+<<<<<<< HEAD
+
+=======
+        frame.add(playerName);
+>>>>>>> 5811ab22ce88f4dddb4b8bd5b1715e07ce672860
         frame.add(playButton);
         playButton.setPreferredSize(new Dimension(200, 100));
         frame.add(exitButton);
@@ -176,6 +203,7 @@ public class GUI extends Board implements ActionListener {
 
         // Adds the fields to the panel
         // Adds all the panels to the container
+        welcome.add(loading);
         container.add(start);
         container.add(frame);
         container2.add(frame2);
@@ -195,9 +223,15 @@ public class GUI extends Board implements ActionListener {
         print();
     }
 
+
     // Initiates the window to display it
 
     public void startGui() {
+/* // splash screen/welcome loading screen
+        spalshScreen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Sets default close operation (when user clicks X)
+        spalshScreen.setSize(1000, 750); // Sets a default window size.
+        spalshScreen.setVisible(true); // Sets the window to be visible.
+*/
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Sets default close operation (when user clicks X)
         frame.setSize(1000, 750); // Sets a default window size.
         frame.setVisible(true); // Sets the window to be visible.
@@ -245,11 +279,23 @@ public class GUI extends Board implements ActionListener {
             doMove(randomNumber);
             JOptionPane.showMessageDialog(null, randomNumber);
             
+<<<<<<< HEAD
 //            Quiz();
+=======
+            Quiz();
+<<<<<<< Updated upstream
+            
+=======
+            frame2.setVisible(false);
+>>>>>>> 5811ab22ce88f4dddb4b8bd5b1715e07ce672860
 
+>>>>>>> Stashed changes
         }
-
     }
+<<<<<<< Updated upstream
+    
+    
+=======
     public void Quiz() {
   
         JFrame quizframe = new JFrame("Quiz");
@@ -282,13 +328,16 @@ public class GUI extends Board implements ActionListener {
                 {
                     if (e.getActionCommand() == "this one")
                     {
-                        JOptionPane.showOptionDialog(null, "Correct!", "Next Question", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
+                        //JOptionPane.showOptionDialog(null, "Correct!", "Next Question", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
                         //JOptionPane.showMessageDialog(null, "Correct");
+                        quizframe.setVisible(false);
+                        frame2.setVisible(true);
                         
                     }
                 }
                 });
 }
+>>>>>>> Stashed changes
 }
 
 
