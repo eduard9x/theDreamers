@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2878fcf-e20c-403c-bd59-5adb858e5df2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/Board.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/Board.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/Game.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Board.java" afterPath="$PROJECT_DIR$/src/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI.java" afterPath="$PROJECT_DIR$/src/GUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="theDreamers.iws" />
@@ -57,8 +52,8 @@
       <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25339368">
-              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.84162897">
+              <caret line="146" column="5" selection-start-line="75" selection-start-column="4" selection-end-line="146" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -527,12 +522,12 @@
       <workItem from="1454676725994" duration="1534000" />
       <workItem from="1454683983190" duration="3416000" />
       <workItem from="1454844464872" duration="1219000" />
-      <workItem from="1454947602656" duration="7293000" />
+      <workItem from="1454947602656" duration="7373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31346000" />
+    <option name="totallyTimeSpent" value="31426000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1044,8 +1039,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25339368">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.84162897">
+          <caret line="146" column="5" selection-start-line="75" selection-start-column="4" selection-end-line="146" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
