@@ -1,18 +1,15 @@
-
 import javax.swing.*;
-import java.awt.*;
 
-public class Board{
+public class Board {
 
-//    todo manage the board here
+    //    todo manage the board here
     public final String LEFT = "LEFT", RIGHT = "RIGHT", TOP = "TOP", BOTTOM = "BOTTOM";
-    private int leftX, rightX, topX, bottomX, leftY, rightY, topY, bottomY, playerX, playerY;
-    private JButton[][] gameBoard;
-
-    private int square, stage, activeSquare;
-//    square = the position on the board; when reaching 40 it means it finished the first stage
+    //    square = the position on the board; when reaching 40 it means it finished the first stage
 //    stage = there will be two stages: 1 - College, 2 - University. When the stage increases, the difficulty increases as well.
     javax.swing.JLabel characterTest;
+    private int leftX, rightX, topX, bottomX, leftY, rightY, topY, bottomY, playerX, playerY;
+    private JButton[][] gameBoard;
+    private int square, stage, activeSquare;
 
     public Board() {
         characterTest = new javax.swing.JLabel();
@@ -121,23 +118,39 @@ public class Board{
                         //find how many rows to go up
 
                         playerX = playerX + difference; //go down the difference
-                        playerY = topY;
+                        playerY = rightY;
                     } else {
                         playerY = playerY + dice;
                     }
                 }
                  /* End of Top right corner constraints */
+                else {
 
+                     /* Start of Bottom right corner constraints */
+                    if (playerY == rightY) {
+                        if (playerX + dice > rightY) //out of border
+                        {
+                            int difference = playerX + dice - rightY;
+                            //find how many rows to go up
+
+                            playerY = playerY - difference; //go left the difference
+                            playerX = rightY;
+                        } else {
+                            playerX = playerX + dice;
+                        }
+                    }
+                 /* End of Bottom right corner constraints */
+
+                }
 
             }
 
 
         }
 
-        System.out.println(playerX + " " + playerY);
+//        System.out.println(playerX + " " + playerY);
 
         gameBoard[playerX][playerY].setText("player");
-
 
 
     }
@@ -182,12 +195,12 @@ public class Board{
     public void Quiz() {
 
 //        todo need to add questions and answers nested under buttons
-       
+
         //todo need to create an array that holds the questions
         Object[] options = {"1", "Hero", "3", "4"};
         int[] answers = {0, 1, 2, 3};
         /* Make sure the answers and options are in the correct order - example Correct is second - answers = 1 */
-        
+
         int n = JOptionPane.showOptionDialog(null, "What is 1 + 1 ?", "A Silly Question", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
 
         if (n == answers[1]) {
