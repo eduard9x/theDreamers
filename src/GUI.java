@@ -271,9 +271,51 @@ public class GUI extends Board implements ActionListener {
             int randomNumber = 0;
             randomNumber = rollDice();
             JOptionPane.showMessageDialog(null, randomNumber);
+            
+            Quiz();
 
         }
 
     }
+    public void Quiz() {
+  
+        JFrame quizframe = new JFrame("Quiz");
+        JPanel quizpanel = new JPanel();
+        JLabel quizQuestion = new JLabel("What is the Answer");
+        JButton quizanswerButton = new JButton("Burak");
+        JButton quizanswerButton2 = new JButton("lol");
+        JButton quizcorrectAnswer = new JButton("this one");
+        JButton quizanswerButton3 = new JButton("lol");
+        
+        
+        quizframe.setLayout(new FlowLayout());
+        quizframe.setVisible(true);
+        quizframe.setSize(1000, 500);
+        quizframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
 
+       
+        quizpanel.add(quizQuestion);
+        quizpanel.add(quizanswerButton);
+        quizpanel.add(quizanswerButton2);
+        quizpanel.add(quizcorrectAnswer);
+        quizpanel.add(quizanswerButton3);
+        quizframe.add(quizpanel);
+        
+        quizcorrectAnswer.addActionListener(new ActionListener()//throw button will trigger the following lines of code
+                {
+                @Override
+                public void actionPerformed(ActionEvent e)
+                {
+                    if (e.getActionCommand() == "this one")
+                    {
+                        JOptionPane.showOptionDialog(null, "Correct!", "Next Question", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
+                        //JOptionPane.showMessageDialog(null, "Correct");
+                        
+                    }
+                }
+                });
 }
+}
+
+
