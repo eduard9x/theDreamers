@@ -270,6 +270,7 @@ public class GUI extends Board implements ActionListener {
             JOptionPane.showMessageDialog(null, randomNumber);
 
             Quiz();
+            //test git push
 
         }
     }
