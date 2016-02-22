@@ -1,5 +1,3 @@
-import javax.swing.*;
-
 public class Game {
 
 //todo create board

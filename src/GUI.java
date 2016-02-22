@@ -1,13 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * @author Harvey
- */
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -91,14 +81,9 @@ public class GUI extends Board implements ActionListener {
         start = new javax.swing.JLabel();
         start.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.png")));
 
-        //character test background gif
-        characterTest = new javax.swing.JLabel();
-        characterTest.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character-small.gif")));
-
         //for frame 2
         JPanel frame2 = new JPanel();
         frame2.add(nextFrame);
-        frame2.add(characterTest);
 
 
 /* Start of creating the board */
@@ -110,8 +95,6 @@ public class GUI extends Board implements ActionListener {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.insets = new Insets(3, 3, 3, 3);
 
-        //todo need to make j=0 as now we have other buttons on the first line
-        //todo need to remove magic numbers later and replace them with column and row
         for (int j = 1; j <= row; j++) {
             for (int i = 0; i < column; i++) {
 
@@ -119,15 +102,13 @@ public class GUI extends Board implements ActionListener {
 
                 if (i == column - 1 && j == row) doActiveTile(ordinaryButton);
 
-                //todo need to either create 4 lists to add the buttons in or one list with buttons in order
-                //todo or we can do a matrix with 4 lines and 10 columns.
                 if (j == 1) {//top line
                     gbc.ipady = 30;
                     gbc.gridx = i;
                     gbc.gridy = j;
                     gbc.gridwidth = 1;
                     addToList(ordinaryButton,TOP);
-                    ordinaryButton.setText("t");
+//                    ordinaryButton.setText("t");
                     frame2.add(ordinaryButton, gbc); //add in the frame
                 } else {
                     if (j == 10) {//bottom line
@@ -136,7 +117,7 @@ public class GUI extends Board implements ActionListener {
                         gbc.gridy = j;
                         gbc.gridwidth = 1;
                         addToList(ordinaryButton,BOTTOM);
-                        ordinaryButton.setText("b");
+//                        ordinaryButton.setText("b");
                         frame2.add(ordinaryButton, gbc); //add in the frame
                     } else {
                         if (i == 0) { // left-hand side column
@@ -145,7 +126,7 @@ public class GUI extends Board implements ActionListener {
                             gbc.gridy = j;
                             gbc.gridwidth = 1;
                             addToList(ordinaryButton,LEFT);
-                            ordinaryButton.setText("l");
+//                            ordinaryButton.setText("l");
                             frame2.add(ordinaryButton, gbc); //add in the frame
                         } else {
                             if (i == 9) { // right-hand side column
@@ -154,7 +135,7 @@ public class GUI extends Board implements ActionListener {
                                 gbc.gridy = j;
                                 gbc.gridwidth = 1;
                                 addToList(ordinaryButton,RIGHT);
-                                ordinaryButton.setText("r");
+//                                ordinaryButton.setText("r");
                                 frame2.add(ordinaryButton, gbc); //add in the frame
                             }
                         }
@@ -175,7 +156,6 @@ public class GUI extends Board implements ActionListener {
         gbc.gridwidth = 2;
         frame2.add(rollDice, gbc); //add in the frame
 
-//todo need to remove magic numbers later and replace them with column and row
 
         gbc.ipady = 30;
         gbc.gridx = 6;
@@ -268,9 +248,10 @@ public class GUI extends Board implements ActionListener {
             doMove(randomNumber);
             JOptionPane.showMessageDialog(null, randomNumber);
 
-            Quiz();
-            //test git push
-            // test git push 2
+//            Quiz();
+
+//            todo need to link "player" with player name
+//            todo need to get a secure player name - without numbers or special characters maybe ?
 
         }
     }

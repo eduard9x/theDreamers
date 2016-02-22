@@ -1,3 +1,4 @@
+
 import javax.swing.*;
 
 public class Board {
@@ -6,14 +7,11 @@ public class Board {
     public final String LEFT = "LEFT", RIGHT = "RIGHT", TOP = "TOP", BOTTOM = "BOTTOM";
     //    square = the position on the board; when reaching 40 it means it finished the first stage
 //    stage = there will be two stages: 1 - College, 2 - University. When the stage increases, the difficulty increases as well.
-    javax.swing.JLabel characterTest;
     private int leftX, rightX, topX, bottomX, leftY, rightY, topY, bottomY, playerX, playerY;
     private JButton[][] gameBoard;
     private int square, stage, activeSquare;
 
     public Board() {
-        characterTest = new javax.swing.JLabel();
-        characterTest.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character-small.gif")));
 
         gameBoard = new JButton[10][10];
 
@@ -42,14 +40,12 @@ public class Board {
 
     public void doActiveTile(JButton activeTile) {
 
-        activeTile.setText("Player");
-//        activeTile.setIcon(new javax.swing.ImageIcon("images//character.png"));
+        activeTile.setIcon(new javax.swing.ImageIcon("images//character.png"));
 
     }
 
     public void addToList(JButton createdTile, String list) {
 
-        //todo might need to add I and J in the method, or make a list instead of a matrix
         if (list.equals(LEFT)) {
             gameBoard[leftX][leftY] = createdTile;
             leftX++;
@@ -68,10 +64,8 @@ public class Board {
 
     public void doMove(int dice) {
 
-        gameBoard[playerX][playerY].setText("");
-
-        //todo add constraints for right top corner
-        //todo add constraints for bottom right corner
+//        gameBoard[playerX][playerY].setText("");
+        gameBoard[playerX][playerY].setIcon(null);
 
 
         /* Start of Bottom left corner constraints */
@@ -148,9 +142,8 @@ public class Board {
 
         }
 
-//        System.out.println(playerX + " " + playerY);
 
-        gameBoard[playerX][playerY].setText("player");
+        gameBoard[playerX][playerY].setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character.gif")));
 
 
     }
@@ -158,22 +151,7 @@ public class Board {
 
     public void print() {
 
-        /*
-        for (int j = 0; j < 10; j++) {
-            for (int i = 0; i < 10; i++) {
-                try {
-                    System.out.print(gameBoard[j][i].getText());
-                } catch (java.lang.NullPointerException e) {
-                    System.out.print("0");
-                }
-            }
-
-            System.out.println();
-        }
-        */
-
-        gameBoard[playerX][playerY].setText("player");
-
+        gameBoard[playerX][playerY].setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character.gif")));
 
         /*
 
