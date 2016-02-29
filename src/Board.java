@@ -159,6 +159,7 @@ public class Board {
         //todo need to create an array that holds the questions
         Object[] options = {"1", "Hero", "3", "4"};
         int[] answers = {0, 1, 2, 3};
+        
         /* Make sure the answers and options are in the correct order - example Correct is second - answers = 1 */
 
         int n = JOptionPane.showOptionDialog(null, "What is 1 + 1 ?", "A Silly Question", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);

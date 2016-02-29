@@ -239,15 +239,18 @@ public class GUI extends Board implements ActionListener {
             frame3.setVisible(false);
         } else if (e.getActionCommand() == "ROLL THE DICE") {
 
+            String name = playerName.getText();
             int randomNumber = 0;
             randomNumber = rollDice();
             doMove(randomNumber);
-            JOptionPane.showMessageDialog(null, randomNumber);
+            
+            String fullDetail = "Hi " + name + "," + "\n     You rolled a " + randomNumber;
+            JOptionPane.showMessageDialog(null,fullDetail);
 
-//            Quiz();
+            Quiz();
 
-//            todo need to link "player" with player name
-//            todo need to get a secure player name - without numbers or special characters maybe ?
+//          todo need to link "player" with player name
+//          todo need to get a secure player name - without numbers or special characters maybe ?
 
         }
     }
