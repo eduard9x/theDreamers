@@ -244,7 +244,7 @@ public class GUI extends Board implements ActionListener {
             doMove(randomNumber);
             JOptionPane.showMessageDialog(null, randomNumber);
 
-//            Quiz();
+            Quiz();
 
 //            todo need to link "player" with player name
 //            todo need to get a secure player name - without numbers or special characters maybe ?

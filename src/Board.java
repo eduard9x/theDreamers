@@ -10,6 +10,7 @@ public class Board {
     private int leftX, rightX, topX, bottomX, leftY, rightY, topY, bottomY, playerX, playerY;
     private JButton[][] gameBoard;
     private int square, stage, activeSquare;
+    private DB_Connect connect;
 
     public Board() {
 
@@ -28,6 +29,7 @@ public class Board {
         playerX = 9;
         playerY = 9;
 
+        connect = new DB_Connect();
 
     }
 
@@ -141,7 +143,6 @@ public class Board {
 
         gameBoard[playerX][playerY].setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character.gif")));
 
-
     }
 
 
@@ -154,20 +155,25 @@ public class Board {
 
     public void Quiz() {
 
+        String question = connect.getDataQuestion(1);
+        String answer = connect.getDataAnswer(1);
+
+        System.out.println(question + " " + answer);
+
 //        todo need to add questions and answers nested under buttons
 
         //todo need to create an array that holds the questions
-        Object[] options = {"1", "Hero", "3", "4"};
+        Object[] options = {"1", "Hero", answer, "4"};
         int[] answers = {0, 1, 2, 3};
         /* Make sure the answers and options are in the correct order - example Correct is second - answers = 1 */
 
-        int n = JOptionPane.showOptionDialog(null, "What is 1 + 1 ?", "A Silly Question", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+        int n = JOptionPane.showOptionDialog(null, question, "A Silly Question", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
 
-        if (n == answers[1]) {
+        if (n == answers[2]) {
             System.out.println("Correct");
         } else if (n == answers[0]) {
             System.out.println("Wrong");
-        } else if (n == answers[2]) {
+        } else if (n == answers[1]) {
             System.out.println("Wrong");
         } else if (n == answers[3]) {
             System.out.println("Wrong");

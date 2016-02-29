@@ -5,8 +5,8 @@ public class Main {
         //javax.swing.SwingUtilities.invokeLater(new Runnable(){
         //public void run(){
         // data base class
-        DB_Connect connect = new DB_Connect();
-        connect.getData();
+//        DB_Connect connect = new DB_Connect();
+//        connect.getData();
 
         GUI gui = new GUI();
 
