@@ -136,12 +136,8 @@ public class Board {
                  /* End of Bottom right corner constraints */
 
                 }
-
             }
-
-
         }
-
 
         gameBoard[playerX][playerY].setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character.gif")));
 
@@ -153,20 +149,6 @@ public class Board {
 
         gameBoard[playerX][playerY].setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character.gif")));
 
-        /*
-
-        *** How to style buttons ***
-
-        gameBoard[0][7].setText("<html><b><u>T</u>wo</b><br>lines</html>");
-        gameBoard[0][5].setText("<html><font color=#ffffdd>middle button</font></html>");
-
-        gameBoard[0][2].setText("<html><div style='display:inline;"
-                + "'>regular </div><div style='background-color:#336699;"
-                + "color:#fff;display:inline;'>special</div>"
-                + "<div style='display:inline;'> regular again");
-
-        gameBoard[0][4].setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character-small.gif")));
-        */
     }
 
 
