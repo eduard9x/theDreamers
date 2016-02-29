@@ -18,6 +18,9 @@ public class DB_Connect {
 
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/theDreamers", "root", "");
+            //connection to my personal database
+            //con = DriverManager.getConnection("jdbc:mysql://hareshvekriyacom.ipagemysql.com/the_dreamers", "hareshvekriyacom", "thedreamers");
+
             st = con.createStatement();
 
         } catch (Exception e) {
