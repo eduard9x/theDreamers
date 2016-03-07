@@ -19,8 +19,6 @@ public class Data {
             String answer3 = connect.getAnswer3(1);
             String answer4 = connect.getAnswer4(1);
 
-
-
             connect.closeConnection();
 
             output.format(question + "," + answer1 + "," + answer2 + "," + answer3 + "," + answer4 + ",");

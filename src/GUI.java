@@ -247,9 +247,8 @@ public class GUI extends Board implements ActionListener {
             String fullDetail = "Hi " + name + "," + "\n     You rolled a " + randomNumber;
             JOptionPane.showMessageDialog(null,fullDetail);
 
-            Quiz();
+//            Quiz();
 
-//          todo need to link "player" with player name
 //          todo need to get a secure player name - without numbers or special characters maybe ?
 
         }

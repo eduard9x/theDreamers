@@ -1,5 +1,4 @@
 import java.sql.*; // imports all the sql classes
-import java.util.Scanner;
 
 public class DB_Connect {
 
@@ -11,17 +10,12 @@ public class DB_Connect {
     private String answer1 = "", answer2 = "", answer3 = "", answer4 = "";
 
 
-    private String[] questions = new String[3];
-
     public DB_Connect() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/theDreamersMain", "root", "");
             //connection to my personal database
-            //con = DriverManager.getConnection("jdbc:mysql://hareshvekriyacom.ipagemysql.com/the_dreamers", "hareshvekriyacom", "thedreamers");
-
             st = con.createStatement();
-
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }

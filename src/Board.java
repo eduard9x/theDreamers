@@ -12,7 +12,6 @@ public class Board {
     private int leftX, rightX, topX, bottomX, leftY, rightY, topY, bottomY, playerX, playerY;
     private JButton[][] gameBoard;
     private int square, stage, activeSquare;
-    private DB_Connect connect;
     private String[] data;
     private int playerPosition;
 
@@ -35,7 +34,6 @@ public class Board {
         playerX = 9;
         playerY = 9;
 
-        connect = new DB_Connect();
 
     }
 
@@ -49,7 +47,6 @@ public class Board {
     public void doActiveTile(JButton activeTile) {
 
         activeTile.setIcon(new javax.swing.ImageIcon("images//character.png"));
-
     }
 
     public void addToList(JButton createdTile, String list) {
@@ -67,10 +64,11 @@ public class Board {
             gameBoard[bottomX][bottomY] = createdTile;
             bottomY++;
         }
-
     }
 
     public void doMove(int dice) {
+
+        if(playerX==9 && playerY==9) gameBoard[playerX][playerY].setText("Start");
 
         gameBoard[playerX][playerY].setIcon(null);
         playerPosition += dice;
@@ -133,7 +131,6 @@ public class Board {
                         }
                     }
                     /* End of Bottom right corner constraints */
-
                 }
             }
         }
@@ -145,17 +142,10 @@ public class Board {
     public void print() {
 
         gameBoard[playerX][playerY].setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character.gif")));
-
     }
 
     public void Quiz() {
 
-<<<<<<< HEAD
-        String question = connect.getDataQuestion(1);
-        String answer = connect.getAnswer1(1);
-
-        System.out.println(question + " " + answer);
-=======
         String question = "What is the correct answer?";
         String subject = "Mathematics";
         
@@ -163,14 +153,36 @@ public class Board {
         String wrongAnswer1 = "wrong1";
         String wrongAnswer2 = "wrong2";
         String wrongAnswer3 = "wrong3";
->>>>>>> 43c20c2b56cda2c6ab2e772e4f2d6aaa34807adb
 
-        int positionCorrectAnswer = 1;
-        int positionWrongAnswer1 = 2;
-        int positionWrongAnswer2 = 3;
-        int positionWrongAnswer3 = 0;
+        double randomStuff = Math.floor(Math.random()*4);
+        int randomNumber1 = (int) randomStuff;
 
-        //todo need to create an array that holds the questions
+        int positionCorrectAnswer = randomNumber1;
+        int randomNumber2;
+
+        do {
+            randomStuff = Math.floor(Math.random() * 4);
+            randomNumber2 = (int) randomStuff;
+        }while(randomNumber1 == randomNumber2);
+
+        int positionWrongAnswer1 = randomNumber2;
+        int randomNumber3;
+
+        do {
+            randomStuff = Math.floor(Math.random() * 4);
+            randomNumber3 = (int) randomStuff;
+        }while(randomNumber1 == randomNumber3 || randomNumber2 == randomNumber3);
+
+        int positionWrongAnswer2 = randomNumber3;
+        int randomNumber4;
+
+        do {
+            randomStuff = Math.floor(Math.random() * 4);
+            randomNumber4 = (int) randomStuff;
+        }while(randomNumber1 == randomNumber4 || randomNumber2 == randomNumber4 || randomNumber3 == randomNumber4);
+
+        int positionWrongAnswer3 = randomNumber4;
+
         String[] options = new String[4];
 
         for (int i = 0; i < 4; i++) {
@@ -185,21 +197,16 @@ public class Board {
             }
         }
               
-        int n ;
-        
-         n = JOptionPane.showOptionDialog(null, question, subject, 0, 1, null, options, stage);
-        
-         System.out.println(n);
-         
+        int n = JOptionPane.showOptionDialog(null, question, subject, 0, 1, null, options, stage);
+
+        System.out.println("questions number:" + playerPosition);
+
         if (n == positionCorrectAnswer) {
             System.out.println(correctAnswer);
-        } else if (n == positionWrongAnswer1) {
-            System.out.println(wrongAnswer1);
-        } else if (n == positionWrongAnswer2) {
-            System.out.println(wrongAnswer2);
-        } else if (n == positionWrongAnswer3) {
-            System.out.println(wrongAnswer3);
+        }  else {
+            System.out.println(" wrong answer ");
         }
+
     }
 
     public void readData() {
@@ -214,11 +221,3 @@ public class Board {
     }
 
 }
-
-
-/*
-
-Question,Correct,Wrong,Wrong,Wrong,
-What is your name?,Eduard,Burak,Ace,Haresh
-
- */
