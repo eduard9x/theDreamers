@@ -1,9 +1,6 @@
 import java.sql.*; // imports all the sql classes
 import java.util.Scanner;
 
-/**
- * Created by Harvey on 22/02/2016.
- */
 public class DB_Connect {
 
     //variables that will help to connect to DB
@@ -11,13 +8,15 @@ public class DB_Connect {
     private Statement st;
     private ResultSet rs;
     private final String query = "SELECT * FROM theDreamers WHERE id=";
+    private String answer1 = "", answer2 = "", answer3 = "", answer4 = "";
+
 
     private String[] questions = new String[3];
 
     public DB_Connect() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/theDreamers2", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/theDreamersMain", "root", "");
             //connection to my personal database
             //con = DriverManager.getConnection("jdbc:mysql://hareshvekriyacom.ipagemysql.com/the_dreamers", "hareshvekriyacom", "thedreamers");
 
@@ -31,10 +30,10 @@ public class DB_Connect {
     public String getDataQuestion(int number) {
         String question = "";
         try {
-            rs = st.executeQuery(query+number);
+            rs = st.executeQuery(query + number);
 
             while (rs.next())
-                question = rs.getString("Questions");
+                question = rs.getString("Question");
 
         } catch (Exception e) {
             System.out.println("Error: " + e);
@@ -43,20 +42,58 @@ public class DB_Connect {
         return question;
     }
 
-    public String getDataAnswer(int number) {
-        String answer = "";
+    public void closeConnection() {
         try {
+            con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
-            rs = st.executeQuery(query+number);
-
+    public String getAnswer1(int number) {
+        try {
+            rs = st.executeQuery(query + number);
             while (rs.next())
-                answer = rs.getString("Answers");
+                answer1 = rs.getString("Answer1"); // Always the right answer
 
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }
+        return answer1;
+    }
 
-        return answer;
+    public String getAnswer2(int number){
+        try {
+            rs = st.executeQuery(query + number);
+            while (rs.next())
+                answer2 = rs.getString("Answer2"); // Always the right answer
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+        return answer2;
+    }
+    public String getAnswer3(int number){
+        try {
+            rs = st.executeQuery(query + number);
+            while (rs.next())
+                answer3 = rs.getString("Answer3"); // Always the right answer
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+        return answer3;
+    }
+    public String getAnswer4(int number){
+        try {
+            rs = st.executeQuery(query + number);
+            while (rs.next())
+                answer4 = rs.getString("Answer4"); // Always the right answer
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+        return answer4;
     }
 
 }

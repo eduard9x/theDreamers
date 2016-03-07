@@ -1,5 +1,7 @@
 
 import javax.swing.*;
+import java.io.File;
+import java.util.Scanner;
 
 public class Board {
 
@@ -11,8 +13,12 @@ public class Board {
     private JButton[][] gameBoard;
     private int square, stage, activeSquare;
     private DB_Connect connect;
+    private String[] data;
+    private int playerPosition;
 
     public Board() {
+
+        playerPosition = 0;
 
         gameBoard = new JButton[10][10];
 
@@ -66,9 +72,8 @@ public class Board {
 
     public void doMove(int dice) {
 
-//        gameBoard[playerX][playerY].setText("");
         gameBoard[playerX][playerY].setIcon(null);
-
+        playerPosition += dice;
 
         /* Start of Bottom left corner constraints */
         if (playerX == bottomX) {
@@ -156,7 +161,7 @@ public class Board {
     public void Quiz() {
 
         String question = connect.getDataQuestion(1);
-        String answer = connect.getDataAnswer(1);
+        String answer = connect.getAnswer1(1);
 
         System.out.println(question + " " + answer);
 
@@ -180,4 +185,23 @@ public class Board {
         }
     }
 
+    public void readData() {
+        try {
+            Scanner input = new Scanner(new File("data.txt"));
+            String buildMe = input.nextLine();
+            data = buildMe.split(",");
+            input.close();
+        } catch (Exception ex) {
+            System.err.println(ex);
+        }
+    }
+
 }
+
+
+/*
+
+Question,Correct,Wrong,Wrong,Wrong,
+What is your name?,Eduard,Burak,Ace,Haresh
+
+ */

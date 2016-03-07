@@ -8,6 +8,7 @@ public class Main {
 //        DB_Connect connect = new DB_Connect();
 //        connect.getData();
 
+        Data data = new Data();
         GUI gui = new GUI();
 
     }
