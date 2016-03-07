@@ -84,10 +84,7 @@ public class Board {
                 playerY = playerY - dice;
             }
 
-        }
-        /* End of Bottom left corner constraints */
-
-        else {// Not on the bottom line
+        } /* End of Bottom left corner constraints */ else {// Not on the bottom line
 
             /* Start of Top left corner constraints */
             if (playerY == leftY) {
@@ -101,12 +98,9 @@ public class Board {
                 } else {
                     playerX = playerX - dice;
                 }
-            }
-            /* End of Top left corner constraints */
+            } /* End of Top left corner constraints */ else {
 
-            else {
-
-                 /* Start of Top right corner constraints */
+                /* Start of Top right corner constraints */
                 if (playerX == topX) {
                     if (playerY + dice > rightY) //out of border
                     {
@@ -118,11 +112,9 @@ public class Board {
                     } else {
                         playerY = playerY + dice;
                     }
-                }
-                 /* End of Top right corner constraints */
-                else {
+                } /* End of Top right corner constraints */ else {
 
-                     /* Start of Bottom right corner constraints */
+                    /* Start of Bottom right corner constraints */
                     if (playerY == rightY) {
                         if (playerX + dice > rightY) //out of border
                         {
@@ -135,7 +127,7 @@ public class Board {
                             playerX = playerX + dice;
                         }
                     }
-                 /* End of Bottom right corner constraints */
+                    /* End of Bottom right corner constraints */
 
                 }
             }
@@ -145,39 +137,56 @@ public class Board {
 
     }
 
-
     public void print() {
 
         gameBoard[playerX][playerY].setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character.gif")));
 
     }
 
-
     public void Quiz() {
 
-        String question = connect.getDataQuestion(1);
-        String answer = connect.getDataAnswer(1);
+        String question = "What is the correct answer?";
+        String subject = "Mathematics";
+        
+        String correctAnswer = "correct";
+        String wrongAnswer1 = "wrong1";
+        String wrongAnswer2 = "wrong2";
+        String wrongAnswer3 = "wrong3";
 
-        System.out.println(question + " " + answer);
-
-//        todo need to add questions and answers nested under buttons
+        int positionCorrectAnswer = 1;
+        int positionWrongAnswer1 = 2;
+        int positionWrongAnswer2 = 3;
+        int positionWrongAnswer3 = 0;
 
         //todo need to create an array that holds the questions
-        Object[] options = {"1", "Hero", answer, "4"};
-        int[] answers = {0, 1, 2, 3};
+        String[] options = new String[4];
+
+        for (int i = 0; i < 4; i++) {
+            if (i == positionCorrectAnswer) {
+                options[i] = correctAnswer;
+            } else if (i == positionWrongAnswer1) {
+                options[i] = wrongAnswer1;
+            } else if (i == positionWrongAnswer2) {
+                options[i] = wrongAnswer2;
+            } else if (i == positionWrongAnswer3) {
+                options[i] = wrongAnswer3;
+            }
+        }
+              
+        int n ;
         
-        /* Make sure the answers and options are in the correct order - example Correct is second - answers = 1 */
-
-        int n = JOptionPane.showOptionDialog(null, question, "A Silly Question", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
-
-        if (n == answers[2]) {
-            System.out.println("Correct");
-        } else if (n == answers[0]) {
-            System.out.println("Wrong");
-        } else if (n == answers[1]) {
-            System.out.println("Wrong");
-        } else if (n == answers[3]) {
-            System.out.println("Wrong");
+         n = JOptionPane.showOptionDialog(null, question, subject, 0, 1, null, options, stage);
+        
+         System.out.println(n);
+         
+        if (n == positionCorrectAnswer) {
+            System.out.println(correctAnswer);
+        } else if (n == positionWrongAnswer1) {
+            System.out.println(wrongAnswer1);
+        } else if (n == positionWrongAnswer2) {
+            System.out.println(wrongAnswer2);
+        } else if (n == positionWrongAnswer3) {
+            System.out.println(wrongAnswer3);
         }
     }
 
