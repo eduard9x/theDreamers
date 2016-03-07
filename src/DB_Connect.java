@@ -1,4 +1,5 @@
 import java.sql.*; // imports all the sql classes
+import java.util.Scanner;
 
 /**
  * Created by Harvey on 22/02/2016.
@@ -9,13 +10,17 @@ public class DB_Connect {
     private Connection con;
     private Statement st;
     private ResultSet rs;
+    private final String query = "SELECT * FROM theDreamers WHERE id=";
 
     private String[] questions = new String[3];
 
     public DB_Connect() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/theDreamers", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/theDreamers2", "root", "");
+            //connection to my personal database
+            //con = DriverManager.getConnection("jdbc:mysql://hareshvekriyacom.ipagemysql.com/the_dreamers", "hareshvekriyacom", "thedreamers");
+
             st = con.createStatement();
 
         } catch (Exception e) {
@@ -23,26 +28,35 @@ public class DB_Connect {
         }
     }
 
-    public void getData() {
+    public String getDataQuestion(int number) {
+        String question = "";
         try {
-            double questionNum = Math.random() * 4 + 1;
-            int random = (int) questionNum;
-            int squareNum = random; // its random printing from 1-4, input your number here if you want specific row out of 4
-//            String query = "SELECT * FROM test";
-            String query = "SELECT * FROM test WHERE QNumber=" + squareNum;
-            rs = st.executeQuery(query);
-            System.out.println("Records from the database");
+            rs = st.executeQuery(query+number);
 
-
-            while (rs.next()) {
-                String question = rs.getString("Questions");
-                String answers = rs.getString("Answers");
-                System.out.println(question + " " + answers);
-            }
+            while (rs.next())
+                question = rs.getString("Questions");
 
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }
+
+        return question;
+    }
+
+    public String getDataAnswer(int number) {
+        String answer = "";
+        try {
+
+            rs = st.executeQuery(query+number);
+
+            while (rs.next())
+                answer = rs.getString("Answers");
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+
+        return answer;
     }
 
 }
