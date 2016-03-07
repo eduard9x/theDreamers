@@ -34,7 +34,6 @@ public class Board {
         playerX = 9;
         playerY = 9;
 
-
     }
 
     public int rollDice() {
@@ -219,5 +218,28 @@ public class Board {
             System.err.println(ex);
         }
     }
-
+    /*
+    * This method creates an array of string where:
+    * data[0] <-- question
+    * data[1] <-- correct answer
+    * data[2] <-- wrong answer
+    * data[3] <-- wrong answer
+    * data[4] <-- wrong answer
+    *
+    * And so on as:
+    * data[5] <-- question
+    * data[6] <-- correct answer
+    * data[7] <-- wrong answer
+    * data[8] <-- wrong answer
+    * data[9] <-- wrong answer
+    *
+    * !!!!! And so on as: !!!!
+    * data[n] <-- question
+    * data[n+1] <-- correct answer
+    * data[n+2] <-- wrong answer
+    * data[n+3] <-- wrong answer
+    * data[n+4] <-- wrong answer
+    * where n = [0,data.length/5];
+     */
+//todo next step is to read the data from the file and test it from the file only, not from the database
 }
