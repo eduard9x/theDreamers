@@ -249,8 +249,11 @@ public class GUI extends Board implements ActionListener {
 
 //            Quiz();
 
-//          todo need to get a secure player name - without numbers or special characters maybe ?
-
+            if(getPlayerPosition()>=72) {
+                frame.setVisible(false);
+                frame2.setVisible(false);
+                frame3.setVisible(true);
+            }
         }
     }
 

@@ -3,7 +3,7 @@ import java.util.Formatter;
 public class Data {
 
     public Data() {
-        writeData();
+//        writeData();
     }
 
     public void writeData(){

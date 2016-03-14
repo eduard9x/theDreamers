@@ -14,8 +14,11 @@ public class Board {
     private int square, stage, activeSquare;
     private String[] data;
     private int playerPosition;
+    private int mathematics, science, computerScience, geography, history;
 
     public Board() {
+
+        readData();
 
         playerPosition = 0;
 
@@ -34,6 +37,11 @@ public class Board {
         playerX = 9;
         playerY = 9;
 
+        mathematics = 0;
+        science = 0;
+        computerScience = 0;
+        geography = 0;
+        history = 0;
     }
 
     public int rollDice() {
@@ -71,6 +79,9 @@ public class Board {
 
         gameBoard[playerX][playerY].setIcon(null);
         playerPosition += dice;
+
+
+
 
         /* Start of Bottom left corner constraints */
         if (playerX == bottomX) {
@@ -133,25 +144,22 @@ public class Board {
                 }
             }
         }
-
         gameBoard[playerX][playerY].setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character.gif")));
-
     }
 
     public void print() {
-
         gameBoard[playerX][playerY].setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/character.gif")));
     }
 
     public void Quiz() {
 
-        String question = "What is the correct answer?";
-        String subject = "Mathematics";
-        
-        String correctAnswer = "correct";
-        String wrongAnswer1 = "wrong1";
-        String wrongAnswer2 = "wrong2";
-        String wrongAnswer3 = "wrong3";
+        String question = data[0];
+        String subject = data[5];
+
+        String correctAnswer = data[1];
+        String wrongAnswer1 = data[2];
+        String wrongAnswer2 = data[3];
+        String wrongAnswer3 = data[4];
 
         double randomStuff = Math.floor(Math.random()*4);
         int randomNumber1 = (int) randomStuff;
@@ -195,17 +203,18 @@ public class Board {
                 options[i] = wrongAnswer3;
             }
         }
-              
+
         int n = JOptionPane.showOptionDialog(null, question, subject, 0, 1, null, options, stage);
 
         System.out.println("questions number:" + playerPosition);
 
         if (n == positionCorrectAnswer) {
-            System.out.println(correctAnswer);
+            if(data[5].equals("Mathematics")) mathematics++;
+
+            System.out.println("correct -- and maths skills: " + mathematics);
         }  else {
             System.out.println(" wrong answer ");
         }
-
     }
 
     public void readData() {
@@ -218,28 +227,9 @@ public class Board {
             System.err.println(ex);
         }
     }
-    /*
-    * This method creates an array of string where:
-    * data[0] <-- question
-    * data[1] <-- correct answer
-    * data[2] <-- wrong answer
-    * data[3] <-- wrong answer
-    * data[4] <-- wrong answer
-    *
-    * And so on as:
-    * data[5] <-- question
-    * data[6] <-- correct answer
-    * data[7] <-- wrong answer
-    * data[8] <-- wrong answer
-    * data[9] <-- wrong answer
-    *
-    * !!!!! And so on as: !!!!
-    * data[n] <-- question
-    * data[n+1] <-- correct answer
-    * data[n+2] <-- wrong answer
-    * data[n+3] <-- wrong answer
-    * data[n+4] <-- wrong answer
-    * where n = [0,data.length/5];
-     */
-//todo next step is to read the data from the file and test it from the file only, not from the database
+
+    public int getPlayerPosition() {
+        return playerPosition;
+    }
+
 }
