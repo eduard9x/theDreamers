@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Formatter;
 
 
 public class GUI extends Board implements ActionListener {
@@ -64,8 +65,8 @@ public class GUI extends Board implements ActionListener {
 
         playerName = new javax.swing.JTextField();
         playerName.setText("Player");
-        playerName.setLocation(100,100);
-        playerName.setPreferredSize(new Dimension(100,50));
+        playerName.setLocation(100, 100);
+        playerName.setPreferredSize(new Dimension(100, 50));
 
         JPanel frame = new JPanel();
 
@@ -108,7 +109,7 @@ public class GUI extends Board implements ActionListener {
                     gbc.gridx = i;
                     gbc.gridy = j;
                     gbc.gridwidth = 1;
-                    addToList(ordinaryButton,TOP);
+                    addToList(ordinaryButton, TOP);
                     frame2.add(ordinaryButton, gbc); //add in the frame
                 } else {
                     if (j == 10) {//bottom line
@@ -116,7 +117,7 @@ public class GUI extends Board implements ActionListener {
                         gbc.gridx = i;
                         gbc.gridy = j;
                         gbc.gridwidth = 1;
-                        addToList(ordinaryButton,BOTTOM);
+                        addToList(ordinaryButton, BOTTOM);
                         frame2.add(ordinaryButton, gbc); //add in the frame
                     } else {
                         if (i == 0) { // left-hand side column
@@ -124,7 +125,7 @@ public class GUI extends Board implements ActionListener {
                             gbc.gridx = i;
                             gbc.gridy = j;
                             gbc.gridwidth = 1;
-                            addToList(ordinaryButton,LEFT);
+                            addToList(ordinaryButton, LEFT);
                             frame2.add(ordinaryButton, gbc); //add in the frame
                         } else {
                             if (i == 9) { // right-hand side column
@@ -132,7 +133,7 @@ public class GUI extends Board implements ActionListener {
                                 gbc.gridx = i;
                                 gbc.gridy = j;
                                 gbc.gridwidth = 1;
-                                addToList(ordinaryButton,RIGHT);
+                                addToList(ordinaryButton, RIGHT);
                                 frame2.add(ordinaryButton, gbc); //add in the frame
                             }
                         }
@@ -173,76 +174,82 @@ public class GUI extends Board implements ActionListener {
         gbc.gridx = 1;
         gbc.gridy = 1;
         gbc.gridwidth = 4;
-        frame3.add(saveCareerProspects,gbc);
+        frame3.add(saveCareerProspects, gbc);
 
         skillsLabel = new javax.swing.JLabel("SKILLS");
+        skillsLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.ORANGE));
         gbc.ipady = 10;
         gbc.gridx = 1;
         gbc.gridy = 2;
         gbc.gridwidth = 1;
-        frame3.add(skillsLabel,gbc);
+        frame3.add(skillsLabel, gbc);
         mathematicsLabel = new javax.swing.JLabel();
+        mathematicsLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.PINK));
         gbc.gridx = 1;
         gbc.gridy = 3;
         gbc.gridwidth = 1;
-        frame3.add(mathematicsLabel,gbc);
+        frame3.add(mathematicsLabel, gbc);
         scienceLabel = new javax.swing.JLabel();
+        scienceLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.CYAN));
         gbc.gridx = 1;
         gbc.gridy = 4;
         gbc.gridwidth = 1;
-        frame3.add(scienceLabel,gbc);
+        frame3.add(scienceLabel, gbc);
         computerScienceLabel = new javax.swing.JLabel();
+        computerScienceLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.green));
         gbc.gridx = 1;
         gbc.gridy = 5;
         gbc.gridwidth = 1;
-        frame3.add(computerScienceLabel,gbc);
+        frame3.add(computerScienceLabel, gbc);
         geographyLabel = new javax.swing.JLabel();
+        geographyLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.RED));
         gbc.gridx = 1;
         gbc.gridy = 6;
         gbc.gridwidth = 1;
-        frame3.add(geographyLabel,gbc);
+        frame3.add(geographyLabel, gbc);
         historyLabel = new javax.swing.JLabel();
+        historyLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.BLACK));
         gbc.gridx = 1;
         gbc.gridy = 7;
         gbc.gridwidth = 1;
-        frame3.add(historyLabel,gbc);
+        frame3.add(historyLabel, gbc);
         gbc.ipady = 30;
         gbc.gridx = 1;
         gbc.gridy = 8;
         gbc.gridwidth = 4;
-        frame3.add(exitApplication,gbc);
+        frame3.add(exitApplication, gbc);
 
         gbc.ipady = 10;
         careersLabel = new javax.swing.JLabel("CAREER PROSPECTS", SwingConstants.RIGHT);
         gbc.gridx = 3;
         gbc.gridy = 2;
         gbc.gridwidth = 1;
-        frame3.add(careersLabel,gbc);
-        secondColMaths = new javax.swing.JLabel("Scientist, Lecturer, Bla bla, NASA, INTEL, Bla Bla" ,SwingConstants.RIGHT);
+        frame3.add(careersLabel, gbc);
+        secondColMaths = new javax.swing.JLabel("Scientist, Lecturer, Bla bla, NASA, INTEL, Bla Bla", SwingConstants.RIGHT);
         gbc.gridx = 3;
         gbc.gridy = 3;
         gbc.gridwidth = 1;
-        frame3.add(secondColMaths,gbc);
-        secondColScience = new javax.swing.JLabel("Scientist, Lecturer,",SwingConstants.RIGHT);
+        frame3.add(secondColMaths, gbc);
+        secondColScience = new javax.swing.JLabel("Scientist, Lecturer,", SwingConstants.RIGHT);
         gbc.gridx = 3;
         gbc.gridy = 4;
         gbc.gridwidth = 1;
-        frame3.add(secondColScience,gbc);
-        secondColCompScience = new javax.swing.JLabel("Scientist, Lecturer, NASA, INTEL",SwingConstants.RIGHT);
+        frame3.add(secondColScience, gbc);
+        secondColCompScience = new javax.swing.JLabel("Scientist, Lecturer, NASA, INTEL", SwingConstants.RIGHT);
         gbc.gridx = 3;
         gbc.gridy = 5;
         gbc.gridwidth = 1;
-        frame3.add(secondColCompScience,gbc);
-        secondColGeography = new javax.swing.JLabel("Scientist, Lecturer, NASA",SwingConstants.RIGHT);
+        frame3.add(secondColCompScience, gbc);
+        secondColGeography = new javax.swing.JLabel("Scientist, Lecturer, NASA", SwingConstants.RIGHT);
         gbc.gridx = 3;
         gbc.gridy = 6;
         gbc.gridwidth = 1;
-        frame3.add(secondColGeography,gbc);
-        secondColHistory = new javax.swing.JLabel("Scientist, Lecturer",SwingConstants.RIGHT);
+        frame3.add(secondColGeography, gbc);
+        secondColHistory = new javax.swing.JLabel("Scientist, Lecturer", SwingConstants.RIGHT);
         gbc.gridx = 3;
         gbc.gridy = 7;
         gbc.gridwidth = 1;
-        frame3.add(secondColHistory,gbc);
+        frame3.add(secondColHistory, gbc);
 
 
         // Adds the fields to the panel
@@ -260,6 +267,7 @@ public class GUI extends Board implements ActionListener {
         nextFrame.addActionListener(this);
         rollDice.addActionListener(this);
         saveCareerProspects.addActionListener(this);
+        exitApplication.addActionListener(this);
 
 
         // Starts up the UI
@@ -319,23 +327,37 @@ public class GUI extends Board implements ActionListener {
             frame.setVisible(false);
             frame2.setVisible(false);
             frame3.setVisible(true);
-        } else if (e.getActionCommand() == "BACK TO MENU") {
-            frame.setVisible(true);
-            frame2.setVisible(false);
-            frame3.setVisible(false);
+        } else if (e.getActionCommand() == "Save career prospects") {
+
+            try {
+                Formatter output = new Formatter("Career.txt");
+
+                String prospects = "Mathematician, Scientist ";
+
+                output.format(prospects);
+                output.close();
+            } catch (Exception ex) {
+                System.err.println(ex);
+            }
+
+        } else if (e.getActionCommand() == "Exit application") {
+            int input = JOptionPane.showOptionDialog(null, "Press CANCEL or OK to exit!", "Are you sure?", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
+            if (input == JOptionPane.OK_OPTION) {
+                System.exit(0);
+            }
         } else if (e.getActionCommand() == "ROLL THE DICE") {
 
             String name = playerName.getText();
             int randomNumber = 0;
             randomNumber = rollDice();
             doMove(randomNumber);
-            
+
             String fullDetail = "Hi " + name + "," + "\n     You rolled a " + randomNumber;
-            JOptionPane.showMessageDialog(null,fullDetail);
+            JOptionPane.showMessageDialog(null, fullDetail);
 
             Quiz();
 
-            if(getPlayerPosition()>=72) {
+            if (getPlayerPosition() >= 72) {
                 mathematicsLabel.setText(getMathematics());
                 scienceLabel.setText(getScience());
                 computerScienceLabel.setText(getComputerScience());
