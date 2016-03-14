@@ -75,7 +75,7 @@ public class Board {
 
     public void doMove(int dice) {
 
-        if(playerX==9 && playerY==9) gameBoard[playerX][playerY].setText("Start");
+        if (playerX == 9 && playerY == 9) gameBoard[playerX][playerY].setText("Start");
 
         gameBoard[playerX][playerY].setIcon(null);
         playerPosition += dice;
@@ -161,7 +161,7 @@ public class Board {
         String wrongAnswer2 = data[3];
         String wrongAnswer3 = data[4];
 
-        double randomStuff = Math.floor(Math.random()*4);
+        double randomStuff = Math.floor(Math.random() * 4);
         int randomNumber1 = (int) randomStuff;
 
         int positionCorrectAnswer = randomNumber1;
@@ -170,7 +170,7 @@ public class Board {
         do {
             randomStuff = Math.floor(Math.random() * 4);
             randomNumber2 = (int) randomStuff;
-        }while(randomNumber1 == randomNumber2);
+        } while (randomNumber1 == randomNumber2);
 
         int positionWrongAnswer1 = randomNumber2;
         int randomNumber3;
@@ -178,7 +178,7 @@ public class Board {
         do {
             randomStuff = Math.floor(Math.random() * 4);
             randomNumber3 = (int) randomStuff;
-        }while(randomNumber1 == randomNumber3 || randomNumber2 == randomNumber3);
+        } while (randomNumber1 == randomNumber3 || randomNumber2 == randomNumber3);
 
         int positionWrongAnswer2 = randomNumber3;
         int randomNumber4;
@@ -186,7 +186,7 @@ public class Board {
         do {
             randomStuff = Math.floor(Math.random() * 4);
             randomNumber4 = (int) randomStuff;
-        }while(randomNumber1 == randomNumber4 || randomNumber2 == randomNumber4 || randomNumber3 == randomNumber4);
+        } while (randomNumber1 == randomNumber4 || randomNumber2 == randomNumber4 || randomNumber3 == randomNumber4);
 
         int positionWrongAnswer3 = randomNumber4;
 
@@ -209,10 +209,10 @@ public class Board {
         System.out.println("questions number:" + playerPosition);
 
         if (n == positionCorrectAnswer) {
-            if(data[5].equals("Mathematics")) mathematics++;
+            if (data[5].equals("Mathematics")) mathematics++;
 
             System.out.println("correct -- and maths skills: " + mathematics);
-        }  else {
+        } else {
             System.out.println(" wrong answer ");
         }
     }
@@ -232,4 +232,23 @@ public class Board {
         return playerPosition;
     }
 
+    public String getMathematics(){
+        return "Mathematics: " + Integer.toString(mathematics);
+    }
+
+    public String getScience(){
+        return "Science: " + Integer.toString(science);
+    }
+
+    public String getComputerScience(){
+        return "Computer Science:" + Integer.toString(computerScience);
+    }
+
+    public String getGeography(){
+        return "Geography: " + Integer.toString(geography);
+    }
+
+    public String getHistory(){
+        return "History: " + Integer.toString(history);
+    }
 }

@@ -17,15 +17,15 @@ public class GUI extends Board implements ActionListener {
     // buttons for frame 2
     JButton nextFrame, rollDice;
     // buttons for frame 3
-    JButton goBackToMenu;
+    JButton saveCareerProspects, exitApplication;
 
 
     // Text fields which are shown on the JFrame
     javax.swing.JLabel loading;
     javax.swing.JLabel start;
-    javax.swing.JLabel characterTest;
+    javax.swing.JLabel scienceLabel, computerScienceLabel, historyLabel, geographyLabel;
     javax.swing.JTextField playerName;
-    javax.swing.JLabel labelFrame3;
+    javax.swing.JLabel mathematicsLabel;
 
     JFrame message = new JFrame(); // for pop messages!
 
@@ -37,7 +37,8 @@ public class GUI extends Board implements ActionListener {
         howToPlay = new JButton("HOW TO PLAY");
         nextFrame = new JButton("NEXT FRAME");
         rollDice = new JButton("ROLL THE DICE");
-        goBackToMenu = new JButton("BACK TO MENU");
+        saveCareerProspects = new JButton("Save career prospects");
+        exitApplication = new JButton("Exit application");
 
 
         // The main container for the JFrames
@@ -160,11 +161,56 @@ public class GUI extends Board implements ActionListener {
         frame2.add(nextFrame, gbc); //add in the frame
         /* END OF adding constraints for roll dice and next frame */
 
+
         //for frame 3
         JPanel frame3 = new JPanel();
-        frame3.add(goBackToMenu);
-        labelFrame3 = new javax.swing.JLabel("Your in Frame 3");
-        frame3.add(labelFrame3);
+
+        frame3.setLayout(new GridBagLayout());
+        gbc = new GridBagConstraints();
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        gbc.insets = new Insets(3, 3, 3, 3);
+        gbc.ipady = 30;
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.gridwidth = 2;
+
+        frame3.add(saveCareerProspects,gbc);
+        mathematicsLabel = new javax.swing.JLabel();
+        gbc.ipady = 30;
+        gbc.gridx = 1;
+        gbc.gridy = 2;
+        gbc.gridwidth = 2;
+        frame3.add(mathematicsLabel,gbc);
+        scienceLabel = new javax.swing.JLabel();
+        gbc.ipady = 30;
+        gbc.gridx = 1;
+        gbc.gridy = 3;
+        gbc.gridwidth = 2;
+        frame3.add(scienceLabel,gbc);
+        computerScienceLabel = new javax.swing.JLabel();
+        gbc.ipady = 30;
+        gbc.gridx = 1;
+        gbc.gridy = 4;
+        gbc.gridwidth = 2;
+        frame3.add(computerScienceLabel,gbc);
+        geographyLabel = new javax.swing.JLabel();
+        gbc.ipady = 30;
+        gbc.gridx = 1;
+        gbc.gridy = 5;
+        gbc.gridwidth = 2;
+        frame3.add(geographyLabel,gbc);
+        historyLabel = new javax.swing.JLabel();
+        gbc.ipady = 30;
+        gbc.gridx = 1;
+        gbc.gridy = 6;
+        gbc.gridwidth = 2;
+        frame3.add(historyLabel,gbc);
+        gbc.ipady = 30;
+        gbc.gridx = 1;
+        gbc.gridy = 7;
+        gbc.gridwidth = 2;
+        frame3.add(exitApplication,gbc);
+
 
         // Adds the fields to the panel
         // Adds all the panels to the container
@@ -180,7 +226,7 @@ public class GUI extends Board implements ActionListener {
         exitButton.addActionListener(this);
         nextFrame.addActionListener(this);
         rollDice.addActionListener(this);
-        goBackToMenu.addActionListener(this);
+        saveCareerProspects.addActionListener(this);
 
 
         // Starts up the UI
@@ -230,6 +276,13 @@ public class GUI extends Board implements ActionListener {
                 System.exit(0);
             }
         } else if (e.getActionCommand() == "NEXT FRAME") {
+
+            mathematicsLabel.setText(getMathematics());
+            scienceLabel.setText(getScience());
+            computerScienceLabel.setText(getComputerScience());
+            historyLabel.setText(getHistory());
+            geographyLabel.setText(getGeography());
+
             frame.setVisible(false);
             frame2.setVisible(false);
             frame3.setVisible(true);
@@ -247,9 +300,15 @@ public class GUI extends Board implements ActionListener {
             String fullDetail = "Hi " + name + "," + "\n     You rolled a " + randomNumber;
             JOptionPane.showMessageDialog(null,fullDetail);
 
-//            Quiz();
+            Quiz();
 
             if(getPlayerPosition()>=72) {
+                mathematicsLabel.setText(getMathematics());
+                scienceLabel.setText(getScience());
+                computerScienceLabel.setText(getComputerScience());
+                historyLabel.setText(getHistory());
+                geographyLabel.setText(getGeography());
+
                 frame.setVisible(false);
                 frame2.setVisible(false);
                 frame3.setVisible(true);
