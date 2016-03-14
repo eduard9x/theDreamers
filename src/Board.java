@@ -233,22 +233,22 @@ public class Board {
     }
 
     public String getMathematics(){
-        return "Mathematics: " + Integer.toString(mathematics);
+        return "Mathematics: " + Integer.toString(mathematics)  + "        ";
     }
 
     public String getScience(){
-        return "Science: " + Integer.toString(science);
+        return "Science: " + Integer.toString(science)  + "        ";
     }
 
     public String getComputerScience(){
-        return "Computer Science:" + Integer.toString(computerScience);
+        return "Computer Science:" + Integer.toString(computerScience) + "        ";
     }
 
     public String getGeography(){
-        return "Geography: " + Integer.toString(geography);
+        return "Geography: " + Integer.toString(geography)  + "        ";
     }
 
     public String getHistory(){
-        return "History: " + Integer.toString(history);
+        return "History: " + Integer.toString(history)  + "        ";
     }
 }

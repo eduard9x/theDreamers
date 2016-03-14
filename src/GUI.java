@@ -23,9 +23,9 @@ public class GUI extends Board implements ActionListener {
     // Text fields which are shown on the JFrame
     javax.swing.JLabel loading;
     javax.swing.JLabel start;
-    javax.swing.JLabel scienceLabel, computerScienceLabel, historyLabel, geographyLabel;
+    javax.swing.JLabel skillsLabel, mathematicsLabel, scienceLabel, computerScienceLabel, historyLabel, geographyLabel;
     javax.swing.JTextField playerName;
-    javax.swing.JLabel mathematicsLabel;
+    javax.swing.JLabel careersLabel, secondColMaths, secondColScience, secondColCompScience, secondColHistory, secondColGeography;
 
     JFrame message = new JFrame(); // for pop messages!
 
@@ -172,44 +172,77 @@ public class GUI extends Board implements ActionListener {
         gbc.ipady = 30;
         gbc.gridx = 1;
         gbc.gridy = 1;
-        gbc.gridwidth = 2;
-
+        gbc.gridwidth = 4;
         frame3.add(saveCareerProspects,gbc);
-        mathematicsLabel = new javax.swing.JLabel();
-        gbc.ipady = 30;
+
+        skillsLabel = new javax.swing.JLabel("SKILLS");
+        gbc.ipady = 10;
         gbc.gridx = 1;
         gbc.gridy = 2;
-        gbc.gridwidth = 2;
-        frame3.add(mathematicsLabel,gbc);
-        scienceLabel = new javax.swing.JLabel();
-        gbc.ipady = 30;
+        gbc.gridwidth = 1;
+        frame3.add(skillsLabel,gbc);
+        mathematicsLabel = new javax.swing.JLabel();
         gbc.gridx = 1;
         gbc.gridy = 3;
-        gbc.gridwidth = 2;
-        frame3.add(scienceLabel,gbc);
-        computerScienceLabel = new javax.swing.JLabel();
-        gbc.ipady = 30;
+        gbc.gridwidth = 1;
+        frame3.add(mathematicsLabel,gbc);
+        scienceLabel = new javax.swing.JLabel();
         gbc.gridx = 1;
         gbc.gridy = 4;
-        gbc.gridwidth = 2;
-        frame3.add(computerScienceLabel,gbc);
-        geographyLabel = new javax.swing.JLabel();
-        gbc.ipady = 30;
+        gbc.gridwidth = 1;
+        frame3.add(scienceLabel,gbc);
+        computerScienceLabel = new javax.swing.JLabel();
         gbc.gridx = 1;
         gbc.gridy = 5;
-        gbc.gridwidth = 2;
-        frame3.add(geographyLabel,gbc);
-        historyLabel = new javax.swing.JLabel();
-        gbc.ipady = 30;
+        gbc.gridwidth = 1;
+        frame3.add(computerScienceLabel,gbc);
+        geographyLabel = new javax.swing.JLabel();
         gbc.gridx = 1;
         gbc.gridy = 6;
-        gbc.gridwidth = 2;
+        gbc.gridwidth = 1;
+        frame3.add(geographyLabel,gbc);
+        historyLabel = new javax.swing.JLabel();
+        gbc.gridx = 1;
+        gbc.gridy = 7;
+        gbc.gridwidth = 1;
         frame3.add(historyLabel,gbc);
         gbc.ipady = 30;
         gbc.gridx = 1;
-        gbc.gridy = 7;
-        gbc.gridwidth = 2;
+        gbc.gridy = 8;
+        gbc.gridwidth = 4;
         frame3.add(exitApplication,gbc);
+
+        gbc.ipady = 10;
+        careersLabel = new javax.swing.JLabel("CAREER PROSPECTS", SwingConstants.RIGHT);
+        gbc.gridx = 3;
+        gbc.gridy = 2;
+        gbc.gridwidth = 1;
+        frame3.add(careersLabel,gbc);
+        secondColMaths = new javax.swing.JLabel("Scientist, Lecturer, Bla bla, NASA, INTEL, Bla Bla" ,SwingConstants.RIGHT);
+        gbc.gridx = 3;
+        gbc.gridy = 3;
+        gbc.gridwidth = 1;
+        frame3.add(secondColMaths,gbc);
+        secondColScience = new javax.swing.JLabel("Scientist, Lecturer,",SwingConstants.RIGHT);
+        gbc.gridx = 3;
+        gbc.gridy = 4;
+        gbc.gridwidth = 1;
+        frame3.add(secondColScience,gbc);
+        secondColCompScience = new javax.swing.JLabel("Scientist, Lecturer, NASA, INTEL",SwingConstants.RIGHT);
+        gbc.gridx = 3;
+        gbc.gridy = 5;
+        gbc.gridwidth = 1;
+        frame3.add(secondColCompScience,gbc);
+        secondColGeography = new javax.swing.JLabel("Scientist, Lecturer, NASA",SwingConstants.RIGHT);
+        gbc.gridx = 3;
+        gbc.gridy = 6;
+        gbc.gridwidth = 1;
+        frame3.add(secondColGeography,gbc);
+        secondColHistory = new javax.swing.JLabel("Scientist, Lecturer",SwingConstants.RIGHT);
+        gbc.gridx = 3;
+        gbc.gridy = 7;
+        gbc.gridwidth = 1;
+        frame3.add(secondColHistory,gbc);
 
 
         // Adds the fields to the panel
