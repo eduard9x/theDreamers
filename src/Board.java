@@ -218,14 +218,19 @@ public class Board {
     }
 
     public void readData() {
+        System.out.println("READING DATA!!");
+
         try {
-            Scanner input = new Scanner(new File("data.txt"));
+            Scanner input = new Scanner(new File("databaseLocalFile.txt"));
             String buildMe = input.nextLine();
             data = buildMe.split(",");
             input.close();
         } catch (Exception ex) {
             System.err.println(ex);
         }
+
+        for(int i=0;i<data.length;i++)
+            System.out.println(data[i]);
     }
 
     public int getPlayerPosition() {

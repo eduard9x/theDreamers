@@ -9,7 +9,7 @@ public class Data {
     public void writeData(){
         try
         {
-            Formatter output = new Formatter("data.txt");
+            Formatter output = new Formatter("databaseLocalFile.txt");
 
             DB_Connect connect = new DB_Connect();
 
