@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.border.Border;
+import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -66,7 +68,8 @@ public class GUI extends Board implements ActionListener {
         playerName = new javax.swing.JTextField();
         playerName.setText("Player");
         playerName.setLocation(100, 100);
-        playerName.setPreferredSize(new Dimension(100, 50));
+        playerName.setPreferredSize(new Dimension(100, 100));
+        playerName.setHorizontalAlignment(JTextField.CENTER);
 
         JPanel frame = new JPanel();
 
@@ -81,7 +84,7 @@ public class GUI extends Board implements ActionListener {
 
         //board image start screen
         start = new javax.swing.JLabel();
-        start.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.png")));
+        start.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.jpg")));
 
         //for frame 2
         JPanel frame2 = new JPanel();
@@ -176,80 +179,117 @@ public class GUI extends Board implements ActionListener {
         gbc.gridwidth = 4;
         frame3.add(saveCareerProspects, gbc);
 
+        frame3.setBackground(Color.white);
+
         skillsLabel = new javax.swing.JLabel("SKILLS");
         skillsLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.ORANGE));
+        Font font = skillsLabel.getFont();
+        // same font but bold
+        int fontSize = font.getSize();
+        fontSize +=5;
+        Font boldFont = new Font(font.getFontName(), Font.BOLD, fontSize);
+        skillsLabel.setFont(boldFont);
+
         gbc.ipady = 10;
         gbc.gridx = 1;
-        gbc.gridy = 2;
+        gbc.gridy = 3;
         gbc.gridwidth = 1;
         frame3.add(skillsLabel, gbc);
         mathematicsLabel = new javax.swing.JLabel();
         mathematicsLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.PINK));
         gbc.gridx = 1;
-        gbc.gridy = 3;
+        gbc.gridy = 4;
         gbc.gridwidth = 1;
         frame3.add(mathematicsLabel, gbc);
         scienceLabel = new javax.swing.JLabel();
         scienceLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.CYAN));
         gbc.gridx = 1;
-        gbc.gridy = 4;
+        gbc.gridy = 5;
         gbc.gridwidth = 1;
         frame3.add(scienceLabel, gbc);
         computerScienceLabel = new javax.swing.JLabel();
         computerScienceLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.green));
         gbc.gridx = 1;
-        gbc.gridy = 5;
+        gbc.gridy = 6;
         gbc.gridwidth = 1;
         frame3.add(computerScienceLabel, gbc);
         geographyLabel = new javax.swing.JLabel();
         geographyLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.RED));
         gbc.gridx = 1;
-        gbc.gridy = 6;
+        gbc.gridy = 7;
         gbc.gridwidth = 1;
         frame3.add(geographyLabel, gbc);
         historyLabel = new javax.swing.JLabel();
         historyLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.BLACK));
         gbc.gridx = 1;
-        gbc.gridy = 7;
+        gbc.gridy = 8;
         gbc.gridwidth = 1;
         frame3.add(historyLabel, gbc);
         gbc.ipady = 30;
         gbc.gridx = 1;
-        gbc.gridy = 8;
+        gbc.gridy = 9;
         gbc.gridwidth = 4;
         frame3.add(exitApplication, gbc);
 
         gbc.ipady = 10;
         careersLabel = new javax.swing.JLabel("CAREER PROSPECTS", SwingConstants.RIGHT);
         gbc.gridx = 3;
-        gbc.gridy = 2;
-        gbc.gridwidth = 1;
-        frame3.add(careersLabel, gbc);
-        secondColMaths = new javax.swing.JLabel("Scientist, Lecturer, Bla bla, NASA, INTEL, Bla Bla", SwingConstants.RIGHT);
-        gbc.gridx = 3;
         gbc.gridy = 3;
+        gbc.gridwidth = 1;
+        careersLabel.setFont(boldFont);
+
+        frame3.add(careersLabel, gbc);
+        secondColMaths = new javax.swing.JLabel("Scientist, Lecturer, NASA, INTEL", SwingConstants.RIGHT);
+        gbc.gridx = 3;
+        gbc.gridy = 4;
         gbc.gridwidth = 1;
         frame3.add(secondColMaths, gbc);
         secondColScience = new javax.swing.JLabel("Scientist, Lecturer,", SwingConstants.RIGHT);
         gbc.gridx = 3;
-        gbc.gridy = 4;
+        gbc.gridy = 5;
         gbc.gridwidth = 1;
         frame3.add(secondColScience, gbc);
         secondColCompScience = new javax.swing.JLabel("Scientist, Lecturer, NASA, INTEL", SwingConstants.RIGHT);
         gbc.gridx = 3;
-        gbc.gridy = 5;
+        gbc.gridy = 6;
         gbc.gridwidth = 1;
         frame3.add(secondColCompScience, gbc);
         secondColGeography = new javax.swing.JLabel("Scientist, Lecturer, NASA", SwingConstants.RIGHT);
         gbc.gridx = 3;
-        gbc.gridy = 6;
+        gbc.gridy = 7;
         gbc.gridwidth = 1;
         frame3.add(secondColGeography, gbc);
         secondColHistory = new javax.swing.JLabel("Scientist, Lecturer", SwingConstants.RIGHT);
         gbc.gridx = 3;
-        gbc.gridy = 7;
+        gbc.gridy = 8;
         gbc.gridwidth = 1;
         frame3.add(secondColHistory, gbc);
+
+        JLabel skills = new javax.swing.JLabel();
+        skills.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/small.jpg")));
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.gridheight = 9;
+        gbc.gridwidth = 3;
+        frame3.add(skills, gbc);
+
+
+
+        exitApplication.setFont(boldFont);
+        saveCareerProspects.setFont(boldFont);
+        exitApplication.setBackground(Color.BLACK);
+        exitApplication.setForeground(Color.RED);
+        Border border = new LineBorder(Color.LIGHT_GRAY, 5);
+        exitApplication.setBorder(border);
+        saveCareerProspects.setBorder(border);
+        start.setBorder(border);
+        howToPlay.setBorder(border);
+        playButton.setBorder(border);
+        exitButton.setBorder(border);
+
+        border = new LineBorder(Color.ORANGE, 5);
+        playerName.setBorder(border);
+
 
 
         // Adds the fields to the panel
@@ -338,6 +378,11 @@ public class GUI extends Board implements ActionListener {
                 output.close();
             } catch (Exception ex) {
                 System.err.println(ex);
+            }
+
+            int input = JOptionPane.showOptionDialog(null, "Career prospects have been saved! \n Do you want to exit?", "Career prospects saved", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
+            if (input == JOptionPane.OK_OPTION) {
+                System.exit(0);
             }
 
         } else if (e.getActionCommand() == "Exit application") {
