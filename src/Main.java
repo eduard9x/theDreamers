@@ -8,9 +8,10 @@ public class Main {
 
         /*Testing Database*/
 
-        //DB_Connect connect = new DB_Connect();
+        DB_Connect connect = new DB_Connect();
         //connect.deleteData();
-        //connect.writeData();
+        connect.writeData();
+        System.out.println(connect.getAnswer1(1));
 
     }
 

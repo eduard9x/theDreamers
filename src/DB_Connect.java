@@ -6,14 +6,14 @@ public class DB_Connect {
     private Connection con;
     private Statement st;
     private ResultSet rs;
-    private final String query = "SELECT * FROM theDreamersTable WHERE id=";
+    private final String query = "SELECT * FROM theDreamersMain WHERE id=";
     private String answer1 = "", answer2 = "", answer3 = "", answer4 = "";
 
 
     public DB_Connect() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/theDreamersDatabase", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/theDreamers", "root", "");
             //connection to my personal database
             st = con.createStatement();
 
@@ -122,39 +122,39 @@ public class DB_Connect {
             //("INSERT INTO theDreamers " + "VALUES (id, 'Question', 'Answer1(Correct)', 'Answer2', 'Answer3', 'Answer4', 'Subject')");
             // Q //
             /* 1 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (1, 'Solve (11-5).(63-59+6)/12', '5', '7', '8', '10', 'Maths')");
+            st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (1, 'Solve (11-5).(63-59+6)/12', '5', '7', '8', '10', 'Maths')");
             /* 2 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (2, 'Find the HCF(Highest Common Factor) and LCM(Lowest Common " +
+            st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (2, 'Find the HCF(Highest Common Factor) and LCM(Lowest Common " +
                     "Multiple) of the following pair of numbers: 120,336', '24 and 1680', '16 and 1820', '2 and 203', '23 and 1680', 'Maths')");
             /* 3 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (3, 'Convert to the decimal form to 4 decimal places: -6/13'," +
+            st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (3, 'Convert to the decimal form to 4 decimal places: -6/13'," +
                     " '-0.4615', '-0.3615', '-0.9615', '-0.2615', 'Maths')");
             /* 4 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (4, 'Complete the square: x2 - 12x + 18'," +
+            st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (4, 'Complete the square: x2 - 12x + 18'," +
                     " '(x-6)2 - 18', '(y-6)2 - 18', '(x-3)5 - 16', '(x-4)3 - 12', 'Maths')");
             /* 5 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (5, 'Find the sum of the roots of quadratic equation: x2 - 15x + 2.5 = 0', " +
+            st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (5, 'Find the sum of the roots of quadratic equation: x2 - 15x + 2.5 = 0', " +
                     "'15', '17', '19', '10', 'Maths')");
             /* 6 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (6, 'Solve by factor method: x2+11x+18=0', " +
+            st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (6, 'Solve by factor method: x2+11x+18=0', " +
                     "'x=−2 and x=−9', 'x=−3 and x=−6', 'x=−5 and x=−10', 'x=−7 and x=−11', 'Maths')");
             /* 7 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (7, 'Solve using factor method: 5x2−26x+24=0', " +
+            st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (7, 'Solve using factor method: 5x2−26x+24=0', " +
                     "'x=6, x=224', 'x=3, x=213', 'x=2, x=124', 'x=8, x=367', 'Maths')");
             /* 8 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (8, 'Solve (11-5).(63-59+6)/12', " +
+            st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (8, 'Solve (11-5).(63-59+6)/12', " +
                     "'5', '7', '8', '10', 'Maths')");
             /* 8 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (9, 'Find the gradient of a straight line with the points P(5,3) and Q(8,12).', " +
+            st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (9, 'Find the gradient of a straight line with the points P(5,3) and Q(8,12).', " +
                     "'3', '7', '8', '10', 'Maths')");
             /* 10 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (10, 'Find the factors of 2x3+7x2−5x−4', " +
+            st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (10, 'Find the factors of 2x3+7x2−5x−4', " +
                     "'5', '7', '8', '10', 'Maths')");
             /* 11 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (11, 'Solve (11-5).(63-59+6)/12', " +
+            st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (11, 'Solve (11-5).(63-59+6)/12', " +
                     "'5', '7', '8', '10', 'Maths')");
             /* 12 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (12, 'Solve (11-5).(63-59+6)/12', " +
+            st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (12, 'Solve (11-5).(63-59+6)/12', " +
                     "'5', '7', '8', '10', 'Maths')");
 
             System.out.println("Data inserted into the database!!");
@@ -170,7 +170,7 @@ public class DB_Connect {
     public void getRowCount(){
         try{
             Statement s = con.createStatement();
-            ResultSet r = s.executeQuery("SELECT COUNT(*) AS rowcount FROM theDreamersTable");
+            ResultSet r = s.executeQuery("SELECT COUNT(*) AS rowcount FROM theDreamersMain");
             r.next();
             int count = r.getInt("rowcount");
             r.close();
