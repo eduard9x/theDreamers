@@ -56,6 +56,7 @@ public class GUI extends Board implements ActionListener {
         frame2.setContentPane(container2);
         //container for frame 3
         JPanel container3 = new JPanel();
+        container3.setBackground(Color.WHITE);
         frame3.setContentPane(container3);
 
 
@@ -84,14 +85,14 @@ public class GUI extends Board implements ActionListener {
 
         //board image start screen
         start = new javax.swing.JLabel();
-        start.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.jpg")));
+        start.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo2.png")));
 
         //for frame 2
         JPanel frame2 = new JPanel();
         frame2.add(nextFrame);
 
 
-/* Start of creating the board */
+        /* Start of creating the board */
 
         JButton ordinaryButton;
         int row = 10, column = 10;
@@ -179,7 +180,7 @@ public class GUI extends Board implements ActionListener {
         gbc.gridwidth = 4;
         frame3.add(saveCareerProspects, gbc);
 
-        frame3.setBackground(Color.white);
+        frame3.setBackground(Color.WHITE);
 
         skillsLabel = new javax.swing.JLabel("SKILLS");
         skillsLabel.setBorder(BorderFactory.createMatteBorder(1, 5, 1, 1, Color.ORANGE));
@@ -286,9 +287,13 @@ public class GUI extends Board implements ActionListener {
         howToPlay.setBorder(border);
         playButton.setBorder(border);
         exitButton.setBorder(border);
+        howToPlay.setFont(boldFont);
+        playButton.setFont(boldFont);
+        exitButton.setFont(boldFont);
 
         border = new LineBorder(Color.ORANGE, 5);
         playerName.setBorder(border);
+
 
 
 
@@ -352,7 +357,7 @@ public class GUI extends Board implements ActionListener {
             //frame2.setVisible(false);
             JOptionPane.showMessageDialog(null, "Include how to play intructions here");
         } else if (e.getActionCommand() == "QUIT") {
-            int input = JOptionPane.showOptionDialog(null, "Press CANCEL or OK to exit!", "Are you sure?", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
+            int input = JOptionPane.showOptionDialog(null, "Are you sure you want to exit?", "Are you sure?", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
             if (input == JOptionPane.OK_OPTION) {
                 System.exit(0);
             }
@@ -397,8 +402,9 @@ public class GUI extends Board implements ActionListener {
             randomNumber = rollDice();
             doMove(randomNumber);
 
+            final ImageIcon icon = new ImageIcon(getClass().getResource("/images/dices.gif"));
             String fullDetail = "Hi " + name + "," + "\n     You rolled a " + randomNumber;
-            JOptionPane.showMessageDialog(null, fullDetail);
+            JOptionPane.showMessageDialog(null, fullDetail, "Rolled dice" , JOptionPane.INFORMATION_MESSAGE, icon);
 
             Quiz();
 
