@@ -6,6 +6,12 @@ public class Main {
         Data data = new Data();
         GUI gui = new GUI();
 
+        /*Testing Database*/
+
+        //DB_Connect connect = new DB_Connect();
+        //connect.deleteData();
+        //connect.writeData();
+
     }
 
 }

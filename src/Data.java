@@ -13,6 +13,8 @@ public class Data {
 
             DB_Connect connect = new DB_Connect();
 
+            connect.deleteData();
+
             String question = connect.getDataQuestion(1);
             String answer1 = connect.getAnswer1(1);
             String answer2 = connect.getAnswer2(1);

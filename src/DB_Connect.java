@@ -16,7 +16,6 @@ public class DB_Connect {
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/theDreamers", "root", "");
             //connection to my personal database
             st = con.createStatement();
-            writeData();
 
         } catch (Exception e) {
             System.out.println("Error: " + e);
@@ -93,6 +92,16 @@ public class DB_Connect {
             System.out.println("Error: " + e);
         }
         return answer4;
+    }
+
+    public void deleteData() {
+        try {
+            String sql = "DELETE  FROM  theDreamersMain ";
+            st.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 
 
