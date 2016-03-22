@@ -38,7 +38,7 @@ public class GUI extends Board implements ActionListener {
         playButton = new JButton("PLAY");
         exitButton = new JButton("QUIT");
         howToPlay = new JButton("HOW TO PLAY");
-        nextFrame = new JButton("NEXT FRAME");
+        nextFrame = new JButton("Quit education");
         rollDice = new JButton("ROLL THE DICE");
         saveCareerProspects = new JButton("Save career prospects");
         exitApplication = new JButton("Exit application");
@@ -53,12 +53,13 @@ public class GUI extends Board implements ActionListener {
         frame.setContentPane(container);
         //container for frame 2
         JPanel container2 = new JPanel();
+        container2.setBackground(Color.WHITE);
+
         frame2.setContentPane(container2);
         //container for frame 3
         JPanel container3 = new JPanel();
         container3.setBackground(Color.WHITE);
         frame3.setContentPane(container3);
-
 
         loading = new javax.swing.JLabel();
         loading.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hexLoader.gif")));
@@ -90,7 +91,6 @@ public class GUI extends Board implements ActionListener {
         //for frame 2
         JPanel frame2 = new JPanel();
         frame2.add(nextFrame);
-
 
         /* Start of creating the board */
 
@@ -148,10 +148,9 @@ public class GUI extends Board implements ActionListener {
             }
 
         }
+        /* End of creating the board */
 
-/* End of creating the board */
-
-        /* adding constraints for roll dice and next frame */
+        /* adding constraints for roll dice and Quit education */
         gbc.ipady = 30;
         gbc.gridx = 3;
         gbc.gridy = 5;
@@ -164,7 +163,7 @@ public class GUI extends Board implements ActionListener {
         gbc.gridy = 5;
         gbc.gridwidth = 2;
         frame2.add(nextFrame, gbc); //add in the frame
-        /* END OF adding constraints for roll dice and next frame */
+        /* END OF adding constraints for roll dice and Quit education */
 
 
         //for frame 3
@@ -274,6 +273,14 @@ public class GUI extends Board implements ActionListener {
         gbc.gridwidth = 3;
         frame3.add(skills, gbc);
 
+        JLabel backgroundImage = new javax.swing.JLabel();
+        backgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/LogoSmall.jpg")));
+        gbc.gridx = 4;
+        gbc.gridy = 2;
+        gbc.gridheight = 2;
+        gbc.gridwidth = 3;
+        frame2.setBackground(Color.WHITE);
+        frame2.add(backgroundImage, gbc);
 
 
         exitApplication.setFont(boldFont);
@@ -361,7 +368,7 @@ public class GUI extends Board implements ActionListener {
             if (input == JOptionPane.OK_OPTION) {
                 System.exit(0);
             }
-        } else if (e.getActionCommand() == "NEXT FRAME") {
+        } else if (e.getActionCommand() == "Quit education") {
 
             mathematicsLabel.setText(getMathematics());
             scienceLabel.setText(getScience());
@@ -377,6 +384,7 @@ public class GUI extends Board implements ActionListener {
             try {
                 Formatter output = new Formatter("Career.txt");
 
+                //todo need to add dynamic career prospects
                 String prospects = "Mathematician, Scientist ";
 
                 output.format(prospects);
