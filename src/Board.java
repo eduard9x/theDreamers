@@ -80,7 +80,7 @@ public class Board {
         gameBoard[playerX][playerY].setIcon(null);
         playerPosition += dice;
 
-
+        System.out.println("<<<<<< PLayer pos: " + playerPosition);
 
 
         /* Start of Bottom left corner constraints */
@@ -153,13 +153,12 @@ public class Board {
 
     public void Quiz() {
 
-        String question = data[0];
-        String subject = data[5];
-
-        String correctAnswer = data[1];
-        String wrongAnswer1 = data[2];
-        String wrongAnswer2 = data[3];
-        String wrongAnswer3 = data[4];
+        String question = data[playerPosition * 6 + 0];
+        String correctAnswer = data[playerPosition * 6 + 1];
+        String wrongAnswer1 = data[playerPosition * 6 + 2];
+        String wrongAnswer2 = data[playerPosition * 6 + 3];
+        String wrongAnswer3 = data[playerPosition * 6 + 4];
+        String subject = data[playerPosition * 6 + 5];
 
         double randomStuff = Math.floor(Math.random() * 4);
         int randomNumber1 = (int) randomStuff;
@@ -209,7 +208,7 @@ public class Board {
 //        System.out.println("questions number:" + playerPosition);
 
         if (n == positionCorrectAnswer) {
-            if (data[5].equals("Maths")) mathematics++;
+            if (subject.equals("Maths")) mathematics++;
             System.out.println("correct -- and maths skills: " + mathematics);
         } else {
             System.out.println(" wrong answer ");
@@ -217,20 +216,20 @@ public class Board {
     }
 
     public void readData() {
-        System.out.println("READING DATA!!");
+        System.out.println("READING DATA FROM FILE!!");
 
         try {
             Scanner input = new Scanner(new File("databaseLocalFile.txt"));
             String buildMe = input.nextLine();
-            data = buildMe.split(",");
+            data = buildMe.split(";;;");
             input.close();
         } catch (Exception ex) {
             System.err.println(ex);
         }
 
-        //todo need to make it error proof when connection to database is not open or internet connection
-//        for(int i=0;i<data.length;i++)
-//            System.out.println(data[i]);
+        //todo need to remove this later. It is here just for testing purposes
+        for(int i=0;i<data.length;i++)
+            System.out.println(data[i]);
     }
 
     public int getPlayerPosition() {

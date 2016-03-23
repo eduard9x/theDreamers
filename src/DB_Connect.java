@@ -122,7 +122,7 @@ public class DB_Connect {
             //("INSERT INTO theDreamers " + "VALUES (id, 'Question', 'Answer1(Correct)', 'Answer2', 'Answer3', 'Answer4', 'Subject')");
             // Q //
             /* 1 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (1, 'Solve (11-5).(63-59+6)/12', '5', '7', '8', '10', 'Maths')");
+            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (1, 'Solve (11-5)*(63-59+6)/12', '5', '7', '8', '10', 'Maths')");
             /* 2 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (2, 'Find the HCF(Highest Common Factor) and LCM(Lowest Common " +
                     "Multiple) of the following pair of numbers: 120,336', '24 and 1680', '16 and 1820', '2 and 203', '23 and 1680', 'Maths')");
@@ -142,19 +142,13 @@ public class DB_Connect {
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (7, 'Solve using factor method: 5x2−26x+24=0', " +
                     "'x=6, x=224', 'x=3, x=213', 'x=2, x=124', 'x=8, x=367', 'Maths')");
             /* 8 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (8, 'Solve (11-5).(63-59+6)/12', " +
+            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (8, 'Solve (11-5)*(63-59+6)/12', " +
                     "'5', '7', '8', '10', 'Maths')");
             /* 8 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (9, 'Find the gradient of a straight line with the points P(5,3) and Q(8,12).', " +
                     "'3', '7', '8', '10', 'Maths')");
             /* 10 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (10, 'Find the factors of 2x3+7x2−5x−4', " +
-                    "'5', '7', '8', '10', 'Maths')");
-            /* 11 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (11, 'Solve (11-5).(63-59+6)/12', " +
-                    "'5', '7', '8', '10', 'Maths')");
-            /* 12 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (12, 'Solve (11-5).(63-59+6)/12', " +
                     "'5', '7', '8', '10', 'Maths')");
 
             System.out.println("Data inserted into the database!!");
@@ -167,18 +161,20 @@ public class DB_Connect {
 
 // insert the data
 
-    public void getRowCount(){
+    public int getRowCount(){
+        int count = 0;
         try{
             Statement s = con.createStatement();
             ResultSet r = s.executeQuery("SELECT COUNT(*) AS rowcount FROM theDreamersTable");
             r.next();
-            int count = r.getInt("rowcount");
+            count = r.getInt("rowcount");
             r.close();
             System.out.println("MyTable has " + count + " row(s).");
         }
         catch(Exception ex){
             System.out.println(ex);
         }
+        return count;
     }
 
 
