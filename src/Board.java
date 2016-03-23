@@ -189,7 +189,6 @@ public class Board {
 
 
         int positionWrongAnswer3 = randomNumber4;
-//=======
 
         String[] options = new String[4];
 
