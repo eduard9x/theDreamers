@@ -188,7 +188,9 @@ public class Board {
             randomNumber4 = (int) randomStuff;
         } while (randomNumber1 == randomNumber4 || randomNumber2 == randomNumber4 || randomNumber3 == randomNumber4);
 
+
         int positionWrongAnswer3 = randomNumber4;
+//=======
 
         String[] options = new String[4];
 
@@ -206,11 +208,10 @@ public class Board {
 
         int n = JOptionPane.showOptionDialog(null, question, subject, 0, 1, null, options, stage);
 
-        System.out.println("questions number:" + playerPosition);
+//        System.out.println("questions number:" + playerPosition);
 
         if (n == positionCorrectAnswer) {
-            if (data[5].equals("Mathematics")) mathematics++;
-
+            if (data[5].equals("Maths")) mathematics++;
             System.out.println("correct -- and maths skills: " + mathematics);
         } else {
             System.out.println(" wrong answer ");
@@ -229,8 +230,9 @@ public class Board {
             System.err.println(ex);
         }
 
-        for(int i=0;i<data.length;i++)
-            System.out.println(data[i]);
+        //todo need to make it error proof when connection to database is not open or internet connection
+//        for(int i=0;i<data.length;i++)
+//            System.out.println(data[i]);
     }
 
     public int getPlayerPosition() {
@@ -256,4 +258,6 @@ public class Board {
     public String getHistory(){
         return "History: " + Integer.toString(history)  + "        ";
     }
+
+
 }
