@@ -123,7 +123,11 @@ public class DB_Connect {
             // Q //
             /* 1 */
 <<<<<<< HEAD
+<<<<<<< HEAD
             st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (1, 'Solve (11-5)x(63-59+6)/12', '5', '7', '8', '10', 'Maths')");
+=======
+            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (1, 'Solve (11-5).(63-59+6)/12', '5', '7', '8', '10', 'Maths')");
+>>>>>>> origin/master
 =======
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (1, 'Solve (11-5).(63-59+6)/12', '5', '7', '8', '10', 'Maths')");
 >>>>>>> origin/master
@@ -147,18 +151,25 @@ public class DB_Connect {
                     "'x=6, x=224', 'x=3, x=213', 'x=2, x=124', 'x=8, x=367', 'Maths')");
             /* 8 */
 <<<<<<< HEAD
+<<<<<<< HEAD
             st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (8, 'Find the gradient of a straight line with the points P(5,3) and Q(8,12)', " +
 =======
+=======
+>>>>>>> origin/master
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (8, 'Solve (11-5).(63-59+6)/12', " +
                     "'5', '7', '8', '10', 'Maths')");
             /* 8 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (9, 'Find the gradient of a straight line with the points P(5,3) and Q(8,12).', " +
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
                     "'3', '7', '8', '10', 'Maths')");
             /* 9 */
             st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (9, 'Find the factors of 2x3+7x2−5x−4', " +
                     "'2(x−1)(x+1/2)(x+4)', '3(x−2)(x+2/1)(x+3)', '2(x−1)(x+1/3)(x+3)', '4(x−3)(x+2/2)(x+2)', 'Maths')");
             /* 10 */
+<<<<<<< HEAD
 <<<<<<< HEAD
             st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (10, 'Find the repeated factor of x3-3x2+4', " +
                     "'(x-2)', '(x-1)', '(x-3)', '1(x-4)', 'Maths')");
@@ -412,10 +423,21 @@ public class DB_Connect {
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (11, 'Solve (11-5).(63-59+6)/12', " +
                     "'5', '7', '8', '10', 'Maths')");
             /* 12 */
+=======
+            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (10, 'Find the factors of 2x3+7x2−5x−4', " +
+                    "'5', '7', '8', '10', 'Maths')");
+            /* 11 */
+            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (11, 'Solve (11-5).(63-59+6)/12', " +
+                    "'5', '7', '8', '10', 'Maths')");
+            /* 12 */
+>>>>>>> origin/master
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (12, 'Solve (11-5).(63-59+6)/12', " +
                     "'5', '7', '8', '10', 'Maths')");
 
             System.out.println("Data inserted into the database!!");
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 
         } catch (SQLException e) {
