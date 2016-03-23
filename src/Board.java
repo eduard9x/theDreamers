@@ -204,7 +204,12 @@ public class Board {
             }
         }
 
-        int n = JOptionPane.showOptionDialog(null, question, subject, 0, 1, null, options, stage);
+        JLabel Box = new JLabel(question);
+        Box.setSize(50,200);
+        Box.revalidate();
+        Box.repaint();
+
+        int n = JOptionPane.showOptionDialog(null, Box, subject, 0, 1, null, options, stage);
 
 //        System.out.println("questions number:" + playerPosition);
 

@@ -137,16 +137,16 @@ public class DB_Connect {
                     "'15', '17', '19', '10', 'Maths')");
             /* 6 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (6, 'Solve by factor method: x2+11x+18=0', " +
-                    "'x=−2 and x=−9', 'x=−3 and x=−6', 'x=−5 and x=−10', 'x=−7 and x=−11', 'Maths')");
+                    "'x=-2 and x=-9', 'x=-3 and x=-6', 'x=-5 and x=-10', 'x=-7 and x=-11', 'Maths')");
             /* 7 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (7, 'Solve using factor method: 5x2−26x+24=0', " +
+            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (7, 'Solve using factor method: 5x2-26x+24=0', " +
                     "'x=6, x=224', 'x=3, x=213', 'x=2, x=124', 'x=8, x=367', 'Maths')");
             /* 8 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (8, 'Find the gradient of a straight line with the points P(5,3) and Q(8,12).', " +
                     "'3', '7', '8', '10', 'Maths')");
             /* 9 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (9, 'Find the factors of 2x3+7x2−5x−4', " +
-                    "'2(x−1)(x+1/2)(x+4)', '3(x−2)(x+2/1)(x+3)', '2(x−1)(x+1/3)(x+3)', '4(x−3)(x+2/2)(x+2)', 'Maths')");
+            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (9, 'Find the factors of 2x3+7x2-5x-4', " +
+                    "'2(x-1)(x+1/2)(x+4)', '3(x-2)(x+2/1)(x+3)', '2(x-1)(x+1/3)(x+3)', '4(x-3)(x+2/2)(x+2)', 'Maths')");
             /* 10 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (10, 'Find the repeated factor of x3-3x2+4', " +
                     "'(x-2)', '(x-1)', '(x-3)', '1(x-4)', 'Maths')");
@@ -154,10 +154,10 @@ public class DB_Connect {
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (11, 'Solve: (2+3i)(3+4i)', " +
                     "'-6+17i', '-5+24i', '-6+16i', '1-6+12i', 'Maths')");
             /* 12 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (12, 'Simplify: (3−4i)2', " +
+            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (12, 'Simplify: (3-4i)2', " +
                     "'-7-24i', '-8-23i', '-5-21i', '-6-24i', 'Maths')");
             /* 13 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (13, 'If (x+y)+(x−y)=5+3i, find x and y', " +
+            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (13, 'If (x+y)+(x-y)=5+3i, find x and y', " +
                     "'x=4,y=1', 'x=3,y=2', 'x=1,y=4', 'x=4,y=2', 'Maths')");
             /* 14 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (14, 'Express 3(cos15°+isin15°) in the form a+ib.', " +
@@ -170,7 +170,7 @@ public class DB_Connect {
                     "'r=3', 'r=4', 'r=2', 'r=5', 'Maths')");
             /* 17 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (17, 'Find the 14th term in the following geometric series: 12,6,3...', " +
-                    "'a14≈0.00146', 'a15≈0.00164', 'a14≈0.00164', 'a14≈0.00126', 'Maths')");
+                    "'a14=0.00146', 'a15=0.00164', 'a14=0.00164', 'a14=0.00126', 'Maths')");
             /* 18 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (18, 'What is the common difference in the following arithmetic series: 2.5,6.4,10.3,...?', " +
                     "'3.9', '2.9', '4.0', '3.8', 'Maths')");
@@ -392,8 +392,7 @@ public class DB_Connect {
             + " 'stop communist expansion in Europe', 'support the unification of Europe, by force if necessary', 'prevent the renewal of German aggression in Europe', 'allow the United Nations to resolve international disputes', 'History')");
 
 
-
-
+            
             System.out.println("Data inserted into the database!!");
 
         } catch (SQLException e) {
