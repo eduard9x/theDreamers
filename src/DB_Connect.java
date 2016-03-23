@@ -124,12 +124,16 @@ public class DB_Connect {
             /* 1 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (1, 'Solve (11-5)x(63-59+6)/12', '5', '7', '8', '10', 'Maths')");
 =======
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (1, 'Solve (11-5).(63-59+6)/12', '5', '7', '8', '10', 'Maths')");
 >>>>>>> origin/master
 =======
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (1, 'Solve (11-5).(63-59+6)/12', '5', '7', '8', '10', 'Maths')");
+>>>>>>> origin/master
+=======
+            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (1, 'Solve (11-5)*(63-59+6)/12', '5', '7', '8', '10', 'Maths')");
 >>>>>>> origin/master
             /* 2 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (2, 'Find the HCF(Highest Common Factor) and LCM(Lowest Common " +
@@ -152,11 +156,15 @@ public class DB_Connect {
             /* 8 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             st.executeUpdate("INSERT INTO theDreamersMain " + "VALUES (8, 'Find the gradient of a straight line with the points P(5,3) and Q(8,12)', " +
 =======
 =======
 >>>>>>> origin/master
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (8, 'Solve (11-5).(63-59+6)/12', " +
+=======
+            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (8, 'Solve (11-5)*(63-59+6)/12', " +
+>>>>>>> origin/master
                     "'5', '7', '8', '10', 'Maths')");
             /* 8 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (9, 'Find the gradient of a straight line with the points P(5,3) and Q(8,12).', " +
@@ -426,6 +434,7 @@ public class DB_Connect {
 =======
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (10, 'Find the factors of 2x3+7x2−5x−4', " +
                     "'5', '7', '8', '10', 'Maths')");
+<<<<<<< HEAD
             /* 11 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (11, 'Solve (11-5).(63-59+6)/12', " +
                     "'5', '7', '8', '10', 'Maths')");
@@ -433,6 +442,8 @@ public class DB_Connect {
 >>>>>>> origin/master
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (12, 'Solve (11-5).(63-59+6)/12', " +
                     "'5', '7', '8', '10', 'Maths')");
+=======
+>>>>>>> origin/master
 
             System.out.println("Data inserted into the database!!");
 <<<<<<< HEAD
@@ -448,18 +459,20 @@ public class DB_Connect {
 
 // insert the data
 
-    public void getRowCount(){
+    public int getRowCount(){
+        int count = 0;
         try{
             Statement s = con.createStatement();
             ResultSet r = s.executeQuery("SELECT COUNT(*) AS rowcount FROM theDreamersTable");
             r.next();
-            int count = r.getInt("rowcount");
+            count = r.getInt("rowcount");
             r.close();
             System.out.println("MyTable has " + count + " row(s).");
         }
         catch(Exception ex){
             System.out.println(ex);
         }
+        return count;
     }
 
 
