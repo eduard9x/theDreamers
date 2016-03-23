@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3342b1ac-6693-482a-9074-7c30550460f0" name="Default" comment="">
-<<<<<<< HEAD
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/Board.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/Board.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/DB_Connect.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/DB_Connect.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/Data.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/Data.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/GUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Board.java" afterPath="$PROJECT_DIR$/src/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DB_Connect.java" afterPath="$PROJECT_DIR$/src/DB_Connect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Data.java" afterPath="$PROJECT_DIR$/src/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI.java" afterPath="$PROJECT_DIR$/src/GUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/databaseLocalFile.txt" afterPath="$PROJECT_DIR$/databaseLocalFile.txt" />
->>>>>>> origin/master
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/theDreamers/Main.class" afterPath="$PROJECT_DIR$/out/production/theDreamers/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DB_Connect.java" afterPath="$PROJECT_DIR$/src/DB_Connect.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Data.java" afterPath="$PROJECT_DIR$/src/Data.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/databaseLocalFile.txt" afterPath="$PROJECT_DIR$/databaseLocalFile.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="theDreamers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,17 +31,12 @@
     <favorites_list name="theDreamers" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+    <leaf>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="0.39473686">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-=======
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
->>>>>>> origin/master
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,18 +46,12 @@
         <entry file="file://$PROJECT_DIR$/src/Board.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-              <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
-=======
               <caret line="215" column="9" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
->>>>>>> origin/master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-=======
       <file leaf-file-name="databaseLocalFile.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/databaseLocalFile.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,20 +62,14 @@
           </provider>
         </entry>
       </file>
->>>>>>> origin/master
       <file leaf-file-name="GUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-              <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-              <folding />
-=======
               <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
->>>>>>> origin/master
             </state>
           </provider>
         </entry>
@@ -102,60 +77,25 @@
       <file leaf-file-name="DB_Connect.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DB_Connect.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="0.0">
-              <caret line="98" column="33" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.7692308">
+              <caret line="123" column="19" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
               <folding>
-                <marker date="1458667570000" expanded="true" signature="240:279" placeholder="SELECT * FRO... theDreamersMain" />
-                <marker date="1458667570000" expanded="true" signature="2705:2734" placeholder="DELETE FROM " />
-                <marker date="1458667570000" expanded="true" signature="2705:2736" placeholder="DELETE FROM " />
-                <marker date="1458667570000" expanded="true" signature="3126:3228" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="3282:3530" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="3584:3763" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="3817:3992" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="4046:4218" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="4272:4458" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="4512:4688" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="4742:4869" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="4923:5097" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="5152:5287" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="5342:5470" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="5525:5653" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="5708:5836" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="5891:6019" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="6074:6202" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="6257:6385" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="6440:6568" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="6623:6751" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="6806:6934" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="6989:7117" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="7172:7300" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="7355:7483" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="7538:7666" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="7721:7849" placeholder="INSERT INTO theDreamersMain... " />
-                <marker date="1458667570000" expanded="true" signature="7904:8032" placeholder="INSERT INTO theDreamersMain... " />
-=======
-            <state vertical-scroll-proportion="0.7173913">
-              <caret line="169" column="28" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
-              <folding>
-                <marker date="1458668140000" expanded="true" signature="240:265" placeholder="SELECT * FRO..theDreamers..." />
-                <marker date="1458668140000" expanded="true" signature="240:280" placeholder="SELECT * FRO..theDreamersMain..." />
-                <marker date="1458668140000" expanded="true" signature="3229:3252" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="3229:3332" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="3386:3635" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="3689:3869" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="3923:4099" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="4153:4326" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="4380:4567" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="4621:4798" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="4852:4980" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="5034:5209" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="5264:5400" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="5455:5584" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="5639:5768" placeholder="INSERT INTO ..." />
-                <marker date="1458668140000" expanded="true" signature="6129:6162" placeholder="SELECT COUNT..FieldMaster..." />
-                <marker date="1458668140000" expanded="true" signature="6129:6178" placeholder="SELECT COUNT..theDreamersTable..." />
->>>>>>> origin/master
+                <marker date="1458740149000" expanded="true" signature="240:265" placeholder="SELECT * FRO..theDreamersMain..." />
+                <marker date="1458740149000" expanded="true" signature="240:280" placeholder="SELECT * FRO..theDreamersTable..." />
+                <marker date="1458740149000" expanded="true" signature="3008:3038" placeholder="DELETE FROM ..." />
+                <marker date="1458740149000" expanded="true" signature="3430:3533" placeholder="INSERT INTO ..." />
+                <marker date="1458740149000" expanded="true" signature="3587:3836" placeholder="INSERT INTO ..." />
+                <marker date="1458740149000" expanded="true" signature="3890:4070" placeholder="INSERT INTO ..." />
+                <marker date="1458740149000" expanded="true" signature="4124:4300" placeholder="INSERT INTO ..." />
+                <marker date="1458740149000" expanded="true" signature="4354:4527" placeholder="INSERT INTO ..." />
+                <marker date="1458740149000" expanded="true" signature="4581:4768" placeholder="INSERT INTO ..." />
+                <marker date="1458740149000" expanded="true" signature="4822:4999" placeholder="INSERT INTO ..." />
+                <marker date="1458740149000" expanded="true" signature="5053:5181" placeholder="INSERT INTO ..." />
+                <marker date="1458740149000" expanded="true" signature="5235:5410" placeholder="INSERT INTO ..." />
+                <marker date="1458740149000" expanded="true" signature="5465:5601" placeholder="INSERT INTO ..." />
+                <marker date="1458740149000" expanded="true" signature="5656:5785" placeholder="INSERT INTO ..." />
+                <marker date="1458740149000" expanded="true" signature="5840:5969" placeholder="INSERT INTO ..." />
+                <marker date="1458740149000" expanded="true" signature="6330:6379" placeholder="SELECT COUNT..theDreamersTable..." />
               </folding>
             </state>
           </provider>
@@ -165,16 +105,11 @@
         <entry file="file://$PROJECT_DIR$/src/Data.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="15" selection-end-column="33" />
-              <folding />
-=======
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
               <folding>
                 <element signature="e#68#69#0" expanded="true" />
                 <element signature="e#95#96#0" expanded="true" />
               </folding>
->>>>>>> origin/master
             </state>
           </provider>
         </entry>
@@ -216,27 +151,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/Square.java" />
         <option value="$PROJECT_DIR$/src/Player.java" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/data.txt" />
         <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/Board.java" />
-=======
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/data.txt" />
-        <option value="$PROJECT_DIR$/src/Game.java" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
->>>>>>> origin/master
         <option value="$PROJECT_DIR$/databaseLocalFile.txt" />
         <option value="$PROJECT_DIR$/Career.txt" />
         <option value="$PROJECT_DIR$/src/GUI.java" />
+        <option value="$PROJECT_DIR$/src/Board.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Data.java" />
         <option value="$PROJECT_DIR$/src/DB_Connect.java" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/Main.java" />
-=======
-        <option value="$PROJECT_DIR$/src/Board.java" />
->>>>>>> origin/master
       </list>
     </option>
   </component>
@@ -252,7 +176,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="810" />
@@ -278,12 +206,10 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -394,15 +320,6 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -424,15 +341,6 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -675,13 +583,8 @@
       <workItem from="1457971663768" duration="8153000" />
       <workItem from="1458150321300" duration="279000" />
       <workItem from="1458578766518" duration="7438000" />
-<<<<<<< HEAD
-      <workItem from="1458657883638" duration="2816000" />
-      <workItem from="1458665530810" duration="197000" />
-      <workItem from="1458666947637" duration="732000" />
-=======
-      <workItem from="1458657883638" duration="8665000" />
->>>>>>> origin/master
+      <workItem from="1458657883638" duration="8846000" />
+      <workItem from="1458739854692" duration="329000" />
     </task>
     <task id="LOCAL-00001" summary="Data base class and library. You might not be able to access data base. You need to know how via local host">
       <created>1456171020039</created>
@@ -693,10 +596,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="55200000" />
-=======
-    <option name="totallyTimeSpent" value="60120000" />
+    <option name="totallyTimeSpent" value="60630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -706,44 +606,16 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
->>>>>>> origin/master
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="810" extended-state="0" />
-    <editor active="false" />
+    <frame x="4" y="23" width="1440" height="810" extended-state="6" />
+    <editor active="true" />
     <layout>
-<<<<<<< HEAD
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3259053" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19742489" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-=======
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -756,13 +628,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19742489" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32729805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
->>>>>>> origin/master
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -798,7 +670,7 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -806,7 +678,15 @@
     <entry file="file://$PROJECT_DIR$/src/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
+          <caret line="215" column="9" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/databaseLocalFile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -814,88 +694,34 @@
     <entry file="file://$PROJECT_DIR$/src/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="214" column="16" selection-start-line="214" selection-start-column="16" selection-end-line="214" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DB_Connect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-<<<<<<< HEAD
-            <marker date="1458667570000" expanded="true" signature="240:279" placeholder="SELECT * FRO... theDreamersMain" />
-            <marker date="1458667570000" expanded="true" signature="2705:2734" placeholder="DELETE FROM " />
-            <marker date="1458667570000" expanded="true" signature="2705:2736" placeholder="DELETE FROM " />
-            <marker date="1458667570000" expanded="true" signature="3126:3228" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3282:3530" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3584:3763" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3817:3992" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4046:4218" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4272:4458" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4512:4688" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4742:4869" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4923:5097" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5152:5287" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5342:5470" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5525:5653" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5708:5836" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5891:6019" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6074:6202" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6257:6385" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6440:6568" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6623:6751" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6806:6934" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6989:7117" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7172:7300" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7355:7483" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7538:7666" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7721:7849" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7904:8032" placeholder="INSERT INTO theDreamersMain... " />
-=======
-            <marker date="1458668140000" expanded="true" signature="240:265" placeholder="SELECT * FRO..theDreamers..." />
-            <marker date="1458668140000" expanded="true" signature="240:280" placeholder="SELECT * FRO..theDreamersMain..." />
-            <marker date="1458668140000" expanded="true" signature="3229:3252" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3229:3332" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3386:3635" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3689:3869" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3923:4099" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4153:4326" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4380:4567" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4621:4798" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4852:4980" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5034:5209" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5264:5400" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5455:5584" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5639:5768" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="6129:6162" placeholder="SELECT COUNT..FieldMaster..." />
-            <marker date="1458668140000" expanded="true" signature="6129:6178" placeholder="SELECT COUNT..theDreamersTable..." />
->>>>>>> origin/master
+            <marker date="1458740149000" expanded="true" signature="240:265" placeholder="SELECT * FRO..theDreamersMain..." />
+            <marker date="1458740149000" expanded="true" signature="240:280" placeholder="SELECT * FRO..theDreamersTable..." />
+            <marker date="1458740149000" expanded="true" signature="3008:3038" placeholder="DELETE FROM ..." />
+            <marker date="1458740149000" expanded="true" signature="3430:3533" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="3587:3836" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="3890:4070" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4124:4300" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4354:4527" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4581:4768" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4822:4999" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5053:5181" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5235:5410" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5465:5601" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5656:5785" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5840:5969" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="6330:6379" placeholder="SELECT COUNT..theDreamersTable..." />
           </folding>
         </state>
       </provider>
@@ -903,7 +729,7 @@
     <entry file="file://$PROJECT_DIR$/src/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding>
             <element signature="e#68#69#0" expanded="true" />
             <element signature="e#95#96#0" expanded="true" />
@@ -914,7 +740,7 @@
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -939,7 +765,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -948,54 +776,22 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
-<<<<<<< HEAD
-            <marker date="1458667570000" expanded="true" signature="240:279" placeholder="SELECT * FRO... theDreamersMain" />
-            <marker date="1458667570000" expanded="true" signature="2705:2734" placeholder="DELETE FROM " />
-            <marker date="1458667570000" expanded="true" signature="2705:2736" placeholder="DELETE FROM " />
-            <marker date="1458667570000" expanded="true" signature="3126:3228" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3282:3530" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3584:3763" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3817:3992" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4046:4218" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4272:4458" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4512:4688" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4742:4869" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4923:5097" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5152:5287" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5342:5470" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5525:5653" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5708:5836" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5891:6019" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6074:6202" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6257:6385" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6440:6568" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6623:6751" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6806:6934" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6989:7117" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7172:7300" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7355:7483" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7538:7666" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7721:7849" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7904:8032" placeholder="INSERT INTO theDreamersMain... " />
-=======
-            <marker date="1458668140000" expanded="true" signature="240:265" placeholder="SELECT * FRO..theDreamers..." />
-            <marker date="1458668140000" expanded="true" signature="240:280" placeholder="SELECT * FRO..theDreamersMain..." />
-            <marker date="1458668140000" expanded="true" signature="3229:3252" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3229:3332" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3386:3635" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3689:3869" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3923:4099" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4153:4326" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4380:4567" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4621:4798" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4852:4980" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5034:5209" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5264:5400" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5455:5584" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5639:5768" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="6129:6162" placeholder="SELECT COUNT..FieldMaster..." />
-            <marker date="1458668140000" expanded="true" signature="6129:6178" placeholder="SELECT COUNT..theDreamersTable..." />
->>>>>>> origin/master
+            <marker date="1458740149000" expanded="true" signature="240:265" placeholder="SELECT * FRO..theDreamersMain..." />
+            <marker date="1458740149000" expanded="true" signature="240:280" placeholder="SELECT * FRO..theDreamersTable..." />
+            <marker date="1458740149000" expanded="true" signature="3008:3038" placeholder="DELETE FROM ..." />
+            <marker date="1458740149000" expanded="true" signature="3430:3533" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="3587:3836" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="3890:4070" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4124:4300" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4354:4527" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4581:4768" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4822:4999" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5053:5181" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5235:5410" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5465:5601" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5656:5785" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5840:5969" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="6330:6379" placeholder="SELECT COUNT..theDreamersTable..." />
           </folding>
         </state>
       </provider>
@@ -1040,54 +836,22 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
-<<<<<<< HEAD
-            <marker date="1458667570000" expanded="true" signature="240:279" placeholder="SELECT * FRO... theDreamersMain" />
-            <marker date="1458667570000" expanded="true" signature="2705:2734" placeholder="DELETE FROM " />
-            <marker date="1458667570000" expanded="true" signature="2705:2736" placeholder="DELETE FROM " />
-            <marker date="1458667570000" expanded="true" signature="3126:3228" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3282:3530" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3584:3763" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3817:3992" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4046:4218" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4272:4458" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4512:4688" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4742:4869" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4923:5097" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5152:5287" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5342:5470" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5525:5653" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5708:5836" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5891:6019" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6074:6202" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6257:6385" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6440:6568" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6623:6751" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6806:6934" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6989:7117" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7172:7300" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7355:7483" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7538:7666" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7721:7849" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7904:8032" placeholder="INSERT INTO theDreamersMain... " />
-=======
-            <marker date="1458668140000" expanded="true" signature="240:265" placeholder="SELECT * FRO..theDreamers..." />
-            <marker date="1458668140000" expanded="true" signature="240:280" placeholder="SELECT * FRO..theDreamersMain..." />
-            <marker date="1458668140000" expanded="true" signature="3229:3252" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3229:3332" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3386:3635" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3689:3869" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3923:4099" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4153:4326" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4380:4567" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4621:4798" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4852:4980" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5034:5209" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5264:5400" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5455:5584" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5639:5768" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="6129:6162" placeholder="SELECT COUNT..FieldMaster..." />
-            <marker date="1458668140000" expanded="true" signature="6129:6178" placeholder="SELECT COUNT..theDreamersTable..." />
->>>>>>> origin/master
+            <marker date="1458740149000" expanded="true" signature="240:265" placeholder="SELECT * FRO..theDreamersMain..." />
+            <marker date="1458740149000" expanded="true" signature="240:280" placeholder="SELECT * FRO..theDreamersTable..." />
+            <marker date="1458740149000" expanded="true" signature="3008:3038" placeholder="DELETE FROM ..." />
+            <marker date="1458740149000" expanded="true" signature="3430:3533" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="3587:3836" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="3890:4070" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4124:4300" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4354:4527" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4581:4768" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4822:4999" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5053:5181" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5235:5410" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5465:5601" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5656:5785" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5840:5969" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="6330:6379" placeholder="SELECT COUNT..theDreamersTable..." />
           </folding>
         </state>
       </provider>
@@ -1127,45 +891,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Career.txt">
+    <entry file="file://$PROJECT_DIR$/src/DB_Connect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
-            <marker date="1458667570000" expanded="true" signature="240:279" placeholder="SELECT * FRO... theDreamersMain" />
-            <marker date="1458667570000" expanded="true" signature="2705:2734" placeholder="DELETE FROM " />
-            <marker date="1458667570000" expanded="true" signature="2705:2736" placeholder="DELETE FROM " />
-            <marker date="1458667570000" expanded="true" signature="3126:3228" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3282:3530" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3584:3763" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3817:3992" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4046:4218" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4272:4458" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4512:4688" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4742:4869" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4923:5097" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5152:5287" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5342:5470" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5525:5653" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5708:5836" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5891:6019" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6074:6202" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6257:6385" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6440:6568" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6623:6751" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6806:6934" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6989:7117" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7172:7300" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7355:7483" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7538:7666" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7721:7849" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7904:8032" placeholder="INSERT INTO theDreamersMain... " />
+            <marker date="1458740149000" expanded="true" signature="240:265" placeholder="SELECT * FRO..theDreamersMain..." />
+            <marker date="1458740149000" expanded="true" signature="240:280" placeholder="SELECT * FRO..theDreamersTable..." />
+            <marker date="1458740149000" expanded="true" signature="3008:3038" placeholder="DELETE FROM ..." />
+            <marker date="1458740149000" expanded="true" signature="3430:3533" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="3587:3836" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="3890:4070" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4124:4300" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4354:4527" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4581:4768" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4822:4999" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5053:5181" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5235:5410" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5465:5601" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5656:5785" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5840:5969" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="6330:6379" placeholder="SELECT COUNT..theDreamersTable..." />
           </folding>
         </state>
       </provider>
@@ -1174,7 +920,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#68#69#0" expanded="true" />
+            <element signature="e#95#96#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1193,14 +942,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/databaseLocalFile.txt">
-=======
+    <entry file="file://$PROJECT_DIR$/src/images/bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Career.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
->>>>>>> origin/master
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
@@ -1208,47 +962,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-=======
     <entry file="file://$PROJECT_DIR$/databaseLocalFile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
->>>>>>> origin/master
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#68#69#0" expanded="true" />
-            <element signature="e#95#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="15" selection-end-column="33" />
-          <folding />
-=======
     <entry file="file://$PROJECT_DIR$/src/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1256,87 +977,58 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
->>>>>>> origin/master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-          <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
-=======
           <caret line="215" column="9" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
->>>>>>> origin/master
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DB_Connect.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="33" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
-          <folding>
-            <marker date="1458667570000" expanded="true" signature="240:279" placeholder="SELECT * FRO... theDreamersMain" />
-            <marker date="1458667570000" expanded="true" signature="2705:2734" placeholder="DELETE FROM " />
-            <marker date="1458667570000" expanded="true" signature="2705:2736" placeholder="DELETE FROM " />
-            <marker date="1458667570000" expanded="true" signature="3126:3228" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3282:3530" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3584:3763" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="3817:3992" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4046:4218" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4272:4458" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4512:4688" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4742:4869" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="4923:5097" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5152:5287" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5342:5470" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5525:5653" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5708:5836" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="5891:6019" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6074:6202" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6257:6385" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6440:6568" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6623:6751" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6806:6934" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="6989:7117" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7172:7300" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7355:7483" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7538:7666" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7721:7849" placeholder="INSERT INTO theDreamersMain... " />
-            <marker date="1458667570000" expanded="true" signature="7904:8032" placeholder="INSERT INTO theDreamersMain... " />
-=======
-        <state vertical-scroll-proportion="0.7173913">
-          <caret line="169" column="28" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
-          <folding>
-            <marker date="1458668140000" expanded="true" signature="240:265" placeholder="SELECT * FRO..theDreamers..." />
-            <marker date="1458668140000" expanded="true" signature="240:280" placeholder="SELECT * FRO..theDreamersMain..." />
-            <marker date="1458668140000" expanded="true" signature="3229:3252" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3229:3332" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3386:3635" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3689:3869" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="3923:4099" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4153:4326" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4380:4567" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4621:4798" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="4852:4980" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5034:5209" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5264:5400" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5455:5584" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="5639:5768" placeholder="INSERT INTO ..." />
-            <marker date="1458668140000" expanded="true" signature="6129:6162" placeholder="SELECT COUNT..FieldMaster..." />
-            <marker date="1458668140000" expanded="true" signature="6129:6178" placeholder="SELECT COUNT..theDreamersTable..." />
->>>>>>> origin/master
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39473686">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="e#68#69#0" expanded="true" />
+            <element signature="e#95#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB_Connect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7692308">
+          <caret line="123" column="19" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
+          <folding>
+            <marker date="1458740149000" expanded="true" signature="240:265" placeholder="SELECT * FRO..theDreamersMain..." />
+            <marker date="1458740149000" expanded="true" signature="240:280" placeholder="SELECT * FRO..theDreamersTable..." />
+            <marker date="1458740149000" expanded="true" signature="3008:3038" placeholder="DELETE FROM ..." />
+            <marker date="1458740149000" expanded="true" signature="3430:3533" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="3587:3836" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="3890:4070" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4124:4300" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4354:4527" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4581:4768" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="4822:4999" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5053:5181" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5235:5410" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5465:5601" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5656:5785" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="5840:5969" placeholder="INSERT INTO ..." />
+            <marker date="1458740149000" expanded="true" signature="6330:6379" placeholder="SELECT COUNT..theDreamersTable..." />
+          </folding>
         </state>
       </provider>
     </entry>

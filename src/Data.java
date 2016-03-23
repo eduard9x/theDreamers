@@ -9,11 +9,13 @@ public class Data {
     public void writeData(){
         try
         {
+            System.out.println("DELETING EVERYTHING AND WRITING NEW DATABASE.");
             Formatter output = new Formatter("databaseLocalFile.txt");
 
             DB_Connect connect = new DB_Connect();
 
             connect.deleteData();
+            connect.writeData();
 
             String question = connect.getDataQuestion(1);
             String answer1 = connect.getAnswer1(1);
