@@ -1,5 +1,6 @@
 
 import javax.swing.*;
+import java.awt.*;
 import java.io.File;
 import java.util.Scanner;
 
@@ -205,9 +206,30 @@ public class Board {
         }
 
         JLabel Box = new JLabel(question);
-        Box.setSize(50,200);
-        Box.revalidate();
-        Box.repaint();
+
+
+
+//        String pt1 = "<html><body width='";
+//        String pt2 =
+//                "'><h1>Label Width</h1>" +
+//                        "<p>Many Swing components support HTML 3.2 &amp;" +
+//                        " (simple) CSS.  By setting a body width we can cause the " +
+//                        " component to find the natural height needed to display" +
+//                        " the component.<br><br>" +
+//                        "<p>The body width in this text is set to " +
+//                        "";
+//        String pt3 =
+//                " pixels." +
+//                        "";
+//
+//        JPanel p = new JPanel( new BorderLayout() );
+//
+//        int width = 175;
+//        String s = pt1 + width + pt2 + width + pt3 ;
+//
+//        JOptionPane.showMessageDialog(null, s);
+
+
 
         int n = JOptionPane.showOptionDialog(null, Box, subject, 0, 1, null, options, stage);
 
