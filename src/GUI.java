@@ -18,7 +18,7 @@ public class GUI extends Board implements ActionListener {
     //Buttons for frame
     JButton howToPlay, playButton, exitButton; // The buttons for "Throw", "Score" and "New Game"
     // buttons for frame 2
-    JButton nextFrame, rollDice;
+    JButton quitEducation, rollDice;
     // buttons for frame 3
     JButton saveCareerProspects, exitApplication;
 
@@ -38,11 +38,10 @@ public class GUI extends Board implements ActionListener {
         playButton = new JButton("PLAY");
         exitButton = new JButton("QUIT");
         howToPlay = new JButton("HOW TO PLAY");
-        nextFrame = new JButton("Quit education");
+        quitEducation = new JButton("Quit education");
         rollDice = new JButton("ROLL THE DICE");
         saveCareerProspects = new JButton("Save career prospects");
         exitApplication = new JButton("Exit application");
-
 
         // The main container for the JFrames
         //container for frame
@@ -86,11 +85,11 @@ public class GUI extends Board implements ActionListener {
 
         //board image start screen
         start = new javax.swing.JLabel();
-        start.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo2.png")));
+        start.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo2.png")));
 
         //for frame 2
         JPanel frame2 = new JPanel();
-        frame2.add(nextFrame);
+        frame2.add(quitEducation);
 
         /* Start of creating the board */
 
@@ -152,7 +151,7 @@ public class GUI extends Board implements ActionListener {
 
         /* adding constraints for roll dice and Quit education */
         gbc.ipady = 30;
-        gbc.gridx = 3;
+        gbc.gridx = 2;
         gbc.gridy = 5;
         gbc.gridwidth = 2;
         frame2.add(rollDice, gbc); //add in the frame
@@ -162,7 +161,7 @@ public class GUI extends Board implements ActionListener {
         gbc.gridx = 6;
         gbc.gridy = 5;
         gbc.gridwidth = 2;
-        frame2.add(nextFrame, gbc); //add in the frame
+        frame2.add(quitEducation, gbc); //add in the frame
         /* END OF adding constraints for roll dice and Quit education */
 
 
@@ -274,7 +273,7 @@ public class GUI extends Board implements ActionListener {
         frame3.add(skills, gbc);
 
         JLabel backgroundImage = new javax.swing.JLabel();
-        backgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/LogoSmall.jpg")));
+        backgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmall.jpg")));
         gbc.gridx = 4;
         gbc.gridy = 2;
         gbc.gridheight = 2;
@@ -282,6 +281,23 @@ public class GUI extends Board implements ActionListener {
         frame2.setBackground(Color.WHITE);
         frame2.add(backgroundImage, gbc);
 
+
+        JLabel rollDiceImage = new javax.swing.JLabel();
+        rollDiceImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/rollDice.jpg")));
+        gbc.gridx = 2;
+        gbc.gridy = 6;
+        gbc.gridheight = 3;
+        gbc.gridwidth = 3;
+        frame2.add(rollDiceImage, gbc);
+
+
+        JLabel quitEducationImage = new javax.swing.JLabel();
+        quitEducationImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/quitEducation.jpg")));
+        gbc.gridx = 6;
+        gbc.gridy = 6;
+        gbc.gridheight = 3;
+        gbc.gridwidth = 3;
+        frame2.add(quitEducationImage, gbc);
 
         exitApplication.setFont(boldFont);
         saveCareerProspects.setFont(boldFont);
@@ -303,8 +319,6 @@ public class GUI extends Board implements ActionListener {
         playerName.setBorder(border);
 
 
-
-
         // Adds the fields to the panel
         // Adds all the panels to the container
         welcome.add(loading);
@@ -317,7 +331,7 @@ public class GUI extends Board implements ActionListener {
         howToPlay.addActionListener(this);
         playButton.addActionListener(this);
         exitButton.addActionListener(this);
-        nextFrame.addActionListener(this);
+        quitEducation.addActionListener(this);
         rollDice.addActionListener(this);
         saveCareerProspects.addActionListener(this);
         exitApplication.addActionListener(this);
@@ -362,7 +376,7 @@ public class GUI extends Board implements ActionListener {
             frame2.setVisible(true);
             frame.setVisible(false);
         } else if (e.getActionCommand() == "HOW TO PLAY") {
-            Icon Instructions =  new ImageIcon(getClass().getResource("/images/Instructions.jpg"));
+            Icon Instructions =  new ImageIcon(getClass().getResource("/images/instructions.jpg"));
             JOptionPane.showMessageDialog(null, "<html><body><h1>How to play the game</h1><h3>| Roll the dice </h3><h3>| Answer questions </h3><h3>| Earn skills</h3><h3>--- Repeat until you graduate</h3><h3>--- Get career prospects based on your skills</h3><h3>--- Save the career prospects for further use</h3></body></html>", "Game Instructions" , JOptionPane.INFORMATION_MESSAGE, Instructions);
         } else if (e.getActionCommand() == "QUIT") {
             int input = JOptionPane.showOptionDialog(null, "Are you sure you want to exit?", "Are you sure?", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
