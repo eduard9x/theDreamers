@@ -239,7 +239,7 @@ public class Board {
 
         //todo need to remove this later. It is here just for testing purposes
 //        for(int i=0;i<data.length;i++)
-//            System.out.println(data[i]);
+//            System.out.println(data[playerPosition]);
     }
 
     public int getPlayerPosition() {

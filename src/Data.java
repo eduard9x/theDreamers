@@ -11,7 +11,6 @@ public class Data {
         String question, answer1, answer2, answer3, answer4, subject;
         StringBuilder builder = new StringBuilder();
 
-
         try
         {
             Formatter output = new Formatter("databaseLocalFile.txt");
