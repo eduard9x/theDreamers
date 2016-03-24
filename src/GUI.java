@@ -15,6 +15,12 @@ public class GUI extends Board implements ActionListener {
     JFrame frame2 = new JFrame("Game Screen");
     JFrame frame3 = new JFrame("Conclusion Screen");
 
+    String[] mathematicsCareer = {"Apprenticeship in accounting", "Accountant Apprentice", "Teacher", "Statistician", "Finance analyst", "Investment manager", "Actuarial analyst"};
+    String[] historyCareer = {"Exhibition guide", "Academic librarian", "Journalist", "Museum/gallery curator", "Heritage manager", "Archivist", "Archaeologist"};
+    String[] geographyCareer = {"Join the army", "Tourism officer", "Secondary school teacher", "Environmental consultant", "Residential surveyor", "Landscape architect", "Cartographer"};
+    String[] scienceCareer = {"Laboratory technician apprentice", "Pharmacist" ,"Healthcare scientist" ,"Research scientist" ,"Forensics" ,"Pharmacologist" ,"Biochemistry" };
+    String[] computerScienceCareer = {"IT sales apprenticeship", "Software engineer", "Database administrator", "Web developer", "Systems analyst", "Application developer", "IT developer"};
+
     //Buttons for frame
     JButton howToPlay, playButton, exitButton; // The buttons for "Throw", "Score" and "New Game"
     // buttons for frame 2
@@ -152,14 +158,14 @@ public class GUI extends Board implements ActionListener {
         /* adding constraints for roll dice and Quit education */
         gbc.ipady = 30;
         gbc.gridx = 2;
-        gbc.gridy = 5;
+        gbc.gridy = 4;
         gbc.gridwidth = 2;
         frame2.add(rollDice, gbc); //add in the frame
 
 
         gbc.ipady = 30;
         gbc.gridx = 6;
-        gbc.gridy = 5;
+        gbc.gridy = 4;
         gbc.gridwidth = 2;
         frame2.add(quitEducation, gbc); //add in the frame
         /* END OF adding constraints for roll dice and Quit education */
@@ -238,27 +244,27 @@ public class GUI extends Board implements ActionListener {
         careersLabel.setFont(boldFont);
 
         frame3.add(careersLabel, gbc);
-        secondColMaths = new javax.swing.JLabel("Scientist, Lecturer, NASA, INTEL", SwingConstants.RIGHT);
+        secondColMaths = new javax.swing.JLabel(mathematicsCareer[0], SwingConstants.RIGHT);
         gbc.gridx = 3;
         gbc.gridy = 4;
         gbc.gridwidth = 1;
         frame3.add(secondColMaths, gbc);
-        secondColScience = new javax.swing.JLabel("Scientist, Lecturer,", SwingConstants.RIGHT);
+        secondColScience = new javax.swing.JLabel(scienceCareer[0], SwingConstants.RIGHT);
         gbc.gridx = 3;
         gbc.gridy = 5;
         gbc.gridwidth = 1;
         frame3.add(secondColScience, gbc);
-        secondColCompScience = new javax.swing.JLabel("Scientist, Lecturer, NASA, INTEL", SwingConstants.RIGHT);
+        secondColCompScience = new javax.swing.JLabel(computerScienceCareer[0] , SwingConstants.RIGHT);
         gbc.gridx = 3;
         gbc.gridy = 6;
         gbc.gridwidth = 1;
         frame3.add(secondColCompScience, gbc);
-        secondColGeography = new javax.swing.JLabel("Scientist, Lecturer, NASA", SwingConstants.RIGHT);
+        secondColGeography = new javax.swing.JLabel(geographyCareer[0], SwingConstants.RIGHT);
         gbc.gridx = 3;
         gbc.gridy = 7;
         gbc.gridwidth = 1;
         frame3.add(secondColGeography, gbc);
-        secondColHistory = new javax.swing.JLabel("Scientist, Lecturer", SwingConstants.RIGHT);
+        secondColHistory = new javax.swing.JLabel(historyCareer[0] , SwingConstants.RIGHT);
         gbc.gridx = 3;
         gbc.gridy = 8;
         gbc.gridwidth = 1;
@@ -274,7 +280,7 @@ public class GUI extends Board implements ActionListener {
 
         JLabel backgroundImage = new javax.swing.JLabel();
         backgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmall.jpg")));
-        gbc.gridx = 4;
+        gbc.gridx = 3;
         gbc.gridy = 2;
         gbc.gridheight = 2;
         gbc.gridwidth = 3;
@@ -285,7 +291,7 @@ public class GUI extends Board implements ActionListener {
         JLabel rollDiceImage = new javax.swing.JLabel();
         rollDiceImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/rollDice.jpg")));
         gbc.gridx = 2;
-        gbc.gridy = 6;
+        gbc.gridy = 5;
         gbc.gridheight = 3;
         gbc.gridwidth = 3;
         frame2.add(rollDiceImage, gbc);
@@ -294,7 +300,7 @@ public class GUI extends Board implements ActionListener {
         JLabel quitEducationImage = new javax.swing.JLabel();
         quitEducationImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/quitEducation.jpg")));
         gbc.gridx = 6;
-        gbc.gridy = 6;
+        gbc.gridy = 5;
         gbc.gridheight = 3;
         gbc.gridwidth = 3;
         frame2.add(quitEducationImage, gbc);
@@ -385,11 +391,7 @@ public class GUI extends Board implements ActionListener {
             }
         } else if (e.getActionCommand() == "Quit education") {
 
-            mathematicsLabel.setText(getMathematics());
-            scienceLabel.setText(getScience());
-            computerScienceLabel.setText(getComputerScience());
-            historyLabel.setText(getHistory());
-            geographyLabel.setText(getGeography());
+            doCareerProspects();
 
             frame.setVisible(false);
             frame2.setVisible(false);
@@ -399,10 +401,16 @@ public class GUI extends Board implements ActionListener {
             try {
                 Formatter output = new Formatter("Career.txt");
 
-                //todo need to add dynamic career prospects
-                String prospects = "Mathematician, Scientist ";
+                StringBuilder myCareersToBeSaved = new StringBuilder();
+                myCareersToBeSaved.append("You might enjoy and be successful in one of the following careers: " + "\n\n");
 
-                output.format(prospects);
+                myCareersToBeSaved.append(mathematicsCareer[getMathematicsValue()] + "\n");
+                myCareersToBeSaved.append(historyCareer[getHistoryValue()] + "\n");
+                myCareersToBeSaved.append(geographyCareer[getGeographyValue()] + "\n");
+                myCareersToBeSaved.append(computerScienceCareer[getComputerScienceValue()] + "\n");
+                myCareersToBeSaved.append(scienceCareer[getScienceValue()] + "\n");
+
+                output.format(myCareersToBeSaved.toString());
                 output.close();
             } catch (Exception ex) {
                 System.err.println(ex);
@@ -432,17 +440,27 @@ public class GUI extends Board implements ActionListener {
             Quiz();
 
             if (getPlayerPosition() >= 72) {
-                mathematicsLabel.setText(getMathematics());
-                scienceLabel.setText(getScience());
-                computerScienceLabel.setText(getComputerScience());
-                historyLabel.setText(getHistory());
-                geographyLabel.setText(getGeography());
+                doCareerProspects();
 
                 frame.setVisible(false);
                 frame2.setVisible(false);
                 frame3.setVisible(true);
             }
         }
+    }
+
+    public void doCareerProspects(){
+        mathematicsLabel.setText(getMathematics());
+        scienceLabel.setText(getScience());
+        computerScienceLabel.setText(getComputerScience());
+        historyLabel.setText(getHistory());
+        geographyLabel.setText(getGeography());
+
+        secondColMaths.setText(mathematicsCareer[getMathematicsValue()]);
+        secondColHistory.setText(historyCareer[getHistoryValue()]);
+        secondColGeography.setText(geographyCareer[getGeographyValue()]);
+        secondColCompScience.setText(computerScienceCareer[getComputerScienceValue()]);
+        secondColScience.setText(scienceCareer[getScienceValue()]);
     }
 
 }

@@ -213,11 +213,22 @@ public class Board {
 //        System.out.println("questions number:" + playerPosition);
 
         if (n == positionCorrectAnswer) {
-            if (subject.equals("Maths")) mathematics++;
-            else if (subject.equals("Computer Science")) computerScience++;
-            else if (subject.equals("Science")) science++;
-            else if (subject.equals("History")) history++;
-            else if (subject.equals("Geography")) geography++;
+            if (subject.equals("Maths")) {
+                if (mathematics < 6)
+                    mathematics++;
+            } else if (subject.equals("Computer Science")) {
+                if (computerScience < 6)
+                    computerScience++;
+            } else if (subject.equals("Science")) {
+                if (science < 6)
+                    science++;
+            } else if (subject.equals("History")) {
+                if (history < 6)
+                    history++;
+            } else if (subject.equals("Geography")) {
+                if (geography < 6)
+                    geography++;
+            }
 
             System.out.println(" correct ");
         } else {
@@ -246,24 +257,45 @@ public class Board {
         return playerPosition;
     }
 
-    public String getMathematics(){
-        return "Mathematics: " + Integer.toString(mathematics)  + "        ";
+    public String getMathematics() {
+        return "Mathematics: " + Integer.toString(mathematics) + "        ";
     }
 
-    public String getScience(){
-        return "Science: " + Integer.toString(science)  + "        ";
+    public String getScience() {
+        return "Science: " + Integer.toString(science) + "        ";
     }
 
-    public String getComputerScience(){
+    public String getComputerScience() {
         return "Computer Science:" + Integer.toString(computerScience) + "        ";
     }
 
-    public String getGeography(){
-        return "Geography: " + Integer.toString(geography)  + "        ";
+    public String getGeography() {
+        return "Geography: " + Integer.toString(geography) + "        ";
     }
 
-    public String getHistory(){
-        return "History: " + Integer.toString(history)  + "        ";
+    public String getHistory() {
+        return "History: " + Integer.toString(history) + "        ";
+    }
+
+
+    public int getMathematicsValue() {
+        return mathematics;
+    }
+
+    public int getHistoryValue() {
+        return history;
+    }
+
+    public int getGeographyValue() {
+        return geography;
+    }
+
+    public int getScienceValue() {
+        return science;
+    }
+
+    public int getComputerScienceValue() {
+        return computerScience;
     }
 
 
