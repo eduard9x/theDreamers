@@ -67,7 +67,7 @@ public class GUI extends Board implements ActionListener {
         frame3.setContentPane(container3);
 
         loading = new javax.swing.JLabel();
-        loading.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hexLoader.gif")));
+        loading.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("images/hexLoader.gif")));
 
         // start panel with play button and exit button
         // for frame
@@ -91,7 +91,7 @@ public class GUI extends Board implements ActionListener {
 
         //board image start screen
         start = new javax.swing.JLabel();
-        start.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo2.png")));
+        start.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("images/logo2.png")));
 
         //for frame 2
         JPanel frame2 = new JPanel();
@@ -271,7 +271,7 @@ public class GUI extends Board implements ActionListener {
         frame3.add(secondColHistory, gbc);
 
         JLabel skills = new javax.swing.JLabel();
-        skills.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/small.jpg")));
+        skills.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("images/small.jpg")));
         gbc.gridx = 1;
         gbc.gridy = 1;
         gbc.gridheight = 9;
@@ -279,7 +279,7 @@ public class GUI extends Board implements ActionListener {
         frame3.add(skills, gbc);
 
         JLabel backgroundImage = new javax.swing.JLabel();
-        backgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmall.jpg")));
+        backgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("images/logoSmall.jpg")));
         gbc.gridx = 3;
         gbc.gridy = 2;
         gbc.gridheight = 2;
@@ -289,7 +289,7 @@ public class GUI extends Board implements ActionListener {
 
 
         JLabel rollDiceImage = new javax.swing.JLabel();
-        rollDiceImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/rollDice.jpg")));
+        rollDiceImage.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("images/rollDice.jpg")));
         gbc.gridx = 2;
         gbc.gridy = 5;
         gbc.gridheight = 3;
@@ -298,7 +298,7 @@ public class GUI extends Board implements ActionListener {
 
 
         JLabel quitEducationImage = new javax.swing.JLabel();
-        quitEducationImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/quitEducation.jpg")));
+        quitEducationImage.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("images/quitEducation.jpg")));
         gbc.gridx = 6;
         gbc.gridy = 5;
         gbc.gridheight = 3;
@@ -382,7 +382,7 @@ public class GUI extends Board implements ActionListener {
             frame2.setVisible(true);
             frame.setVisible(false);
         } else if (e.getActionCommand() == "HOW TO PLAY") {
-            Icon Instructions =  new ImageIcon(getClass().getResource("/images/instructions.jpg"));
+            Icon Instructions =  new ImageIcon(getClass().getClassLoader().getResource("images/instructions.jpg"));
             JOptionPane.showMessageDialog(null, "<html><body><h1>How to play the game</h1><h3>| Roll the dice </h3><h3>| Answer questions </h3><h3>| Earn skills</h3><h3>--- Repeat until you graduate</h3><h3>--- Get career prospects based on your skills</h3><h3>--- Save the career prospects for further use</h3></body></html>", "Game Instructions" , JOptionPane.INFORMATION_MESSAGE, Instructions);
         } else if (e.getActionCommand() == "QUIT") {
             int input = JOptionPane.showOptionDialog(null, "Are you sure you want to exit?", "Are you sure?", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
@@ -433,7 +433,7 @@ public class GUI extends Board implements ActionListener {
             randomNumber = rollDice();
             doMove(randomNumber);
 
-            final ImageIcon icon = new ImageIcon(getClass().getResource("/images/dices.gif"));
+            final ImageIcon icon = new ImageIcon(getClass().getClassLoader().getResource("images/dices.gif"));
             String fullDetail = "Hi " + name + "," + "\n     You rolled a " + randomNumber;
             JOptionPane.showMessageDialog(null, fullDetail, "Rolled dice" , JOptionPane.INFORMATION_MESSAGE, icon);
 

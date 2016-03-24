@@ -207,7 +207,11 @@ public class Board {
 
         String questionHolder = "<html><body width='450'><h2>" + question + "</h2></body></html>";
 
-        int n = JOptionPane.showOptionDialog(null, questionHolder, subject, 0, 1, null, options, stage);
+
+        Icon questionIcon = new javax.swing.ImageIcon(getClass().getClassLoader().getResource("images/questionLogo.png"));
+
+
+        int n = JOptionPane.showOptionDialog(null, questionHolder, subject, 0, 1, questionIcon, options, stage);
 
 
 //        System.out.println("questions number:" + playerPosition);
