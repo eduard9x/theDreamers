@@ -1,4 +1,6 @@
 
+import javafx.beans.property.adapter.JavaBeanObjectProperty;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
@@ -20,7 +22,6 @@ public class Board {
     public Board() {
 
         readData();
-
         playerPosition = 0;
 
         gameBoard = new JButton[10][10];
@@ -48,7 +49,6 @@ public class Board {
     public int rollDice() {
         int number = (int) Math.floor(Math.random() * 6) + 1;
 
-        //todo need to make the player move "number" tiles further
         return number;
     }
 
@@ -80,9 +80,6 @@ public class Board {
 
         gameBoard[playerX][playerY].setIcon(null);
         playerPosition += dice;
-
-        System.out.println("<<<<<< PLayer pos: " + playerPosition);
-
 
         /* Start of Bottom left corner constraints */
         if (playerX == bottomX) {
@@ -205,39 +202,24 @@ public class Board {
             }
         }
 
-        JLabel Box = new JLabel(question);
+        for (int i = 0; i < 4; i++)
+            options[i] = "<html><body width='100' height='50'><h3>" + options[i] + "</h3></body></html>";
 
+        String questionHolder = "<html><body width='450'><h2>" + question + "</h2></body></html>";
 
+        int n = JOptionPane.showOptionDialog(null, questionHolder, subject, 0, 1, null, options, stage);
 
-//        String pt1 = "<html><body width='";
-//        String pt2 =
-//                "'><h1>Label Width</h1>" +
-//                        "<p>Many Swing components support HTML 3.2 &amp;" +
-//                        " (simple) CSS.  By setting a body width we can cause the " +
-//                        " component to find the natural height needed to display" +
-//                        " the component.<br><br>" +
-//                        "<p>The body width in this text is set to " +
-//                        "";
-//        String pt3 =
-//                " pixels." +
-//                        "";
-//
-//        JPanel p = new JPanel( new BorderLayout() );
-//
-//        int width = 175;
-//        String s = pt1 + width + pt2 + width + pt3 ;
-//
-//        JOptionPane.showMessageDialog(null, s);
-
-
-
-        int n = JOptionPane.showOptionDialog(null, Box, subject, 0, 1, null, options, stage);
 
 //        System.out.println("questions number:" + playerPosition);
 
         if (n == positionCorrectAnswer) {
             if (subject.equals("Maths")) mathematics++;
-            System.out.println("correct -- and maths skills: " + mathematics);
+            else if (subject.equals("Computer Science")) computerScience++;
+            else if (subject.equals("Science")) science++;
+            else if (subject.equals("History")) history++;
+            else if (subject.equals("Geography")) geography++;
+
+            System.out.println(" correct ");
         } else {
             System.out.println(" wrong answer ");
         }
@@ -256,8 +238,8 @@ public class Board {
         }
 
         //todo need to remove this later. It is here just for testing purposes
-        for(int i=0;i<data.length;i++)
-            System.out.println(data[i]);
+//        for(int i=0;i<data.length;i++)
+//            System.out.println(data[i]);
     }
 
     public int getPlayerPosition() {

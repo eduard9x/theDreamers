@@ -285,6 +285,7 @@ public class GUI extends Board implements ActionListener {
 
         exitApplication.setFont(boldFont);
         saveCareerProspects.setFont(boldFont);
+        saveCareerProspects.setForeground(Color.ORANGE);
         exitApplication.setBackground(Color.BLACK);
         exitApplication.setForeground(Color.RED);
         Border border = new LineBorder(Color.LIGHT_GRAY, 5);
@@ -361,8 +362,8 @@ public class GUI extends Board implements ActionListener {
             frame2.setVisible(true);
             frame.setVisible(false);
         } else if (e.getActionCommand() == "HOW TO PLAY") {
-            //frame2.setVisible(false);
-            JOptionPane.showMessageDialog(null, "Include how to play intructions here");
+            Icon Instructions =  new ImageIcon(getClass().getResource("/images/Instructions.jpg"));
+            JOptionPane.showMessageDialog(null, "<html><body><h1>How to play the game</h1><h3>| Roll the dice </h3><h3>| Answer questions </h3><h3>| Earn skills</h3><h3>--- Repeat until you graduate</h3><h3>--- Get career prospects based on your skills</h3><h3>--- Save the career prospects for further use</h3></body></html>", "Game Instructions" , JOptionPane.INFORMATION_MESSAGE, Instructions);
         } else if (e.getActionCommand() == "QUIT") {
             int input = JOptionPane.showOptionDialog(null, "Are you sure you want to exit?", "Are you sure?", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
             if (input == JOptionPane.OK_OPTION) {

@@ -1,9 +1,5 @@
 public class Game {
 
-//todo create board
-//todo create functionality of the game
-//todo know when to finish
-
     public Game() {
 
         //create a new player

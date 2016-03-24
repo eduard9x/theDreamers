@@ -209,7 +209,7 @@ public class DB_Connect {
                     " 'The result is too large to be represented.', 'The result is extra large to be represented.', 'The result is too small to be represented.', 'The result is extra small to be represented.', 'Computer Science')");
             /* 30 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (30, 'Write the HTML code required for a link to www.westminster.ac.uk. The link should be ‘Click me to go to the university’s website’'," +
-                    " '<a href= “https://www.westminster.ac.uk/”> Click me to go to the university’s website </a>', '<a class= “https://www.westminster.ac.uk/”> Click me to go to the university’s website </a>', '<a id= “https://www.westminster.ac.uk/”> Click me to go to the university’s website </a>', '<a style= “https://www.westminster.ac.uk/”> Click me to go to the university’s website </a>', 'Computer Science')");
+                    "'&lt;a href= “https://www.westminster.ac.uk/”&gt; Click me to go to the university’s website &lt;/a&gt;', '&lt;a class= “https://www.westminster.ac.uk/”&gt; Click me to go to the university’s website &lt;/a&gt;', '&lt;a id= “https://www.westminster.ac.uk/”&gt; Click me to go to the university’s website &lt;/a&gt;', '&lt;a style= “https://www.westminster.ac.uk/”&gt; Click me to go to the university’s website &lt;/a&gt;', 'Computer Science')");
             /* 31 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (31, 'State Hooke’s Law'," +
                     " 'Force proportional to extension', 'Range proportional to extension', 'Distance proportional to extension', 'Intensity proportional to extension', 'Science')");
