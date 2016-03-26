@@ -53,8 +53,7 @@ public class Board {
     }
 
     public void doActiveTile(JButton activeTile) {
-
-        activeTile.setIcon(new javax.swing.ImageIcon("images//character.png"));
+        activeTile.setIcon(new javax.swing.ImageIcon("images/character.gif"));
     }
 
     public void addToList(JButton createdTile, String list) {

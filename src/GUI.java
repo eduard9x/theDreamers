@@ -320,10 +320,8 @@ public class GUI extends Board implements ActionListener {
         howToPlay.setFont(boldFont);
         playButton.setFont(boldFont);
         exitButton.setFont(boldFont);
-
         border = new LineBorder(Color.ORANGE, 5);
         playerName.setBorder(border);
-
 
         // Adds the fields to the panel
         // Adds all the panels to the container
@@ -385,6 +383,7 @@ public class GUI extends Board implements ActionListener {
             Icon Instructions =  new ImageIcon(getClass().getClassLoader().getResource("images/instructions.jpg"));
             JOptionPane.showMessageDialog(null, "<html><body><h1>How to play the game</h1><h3>| Roll the dice </h3><h3>| Answer questions </h3><h3>| Earn skills</h3><h3>--- Repeat until you graduate</h3><h3>--- Get career prospects based on your skills</h3><h3>--- Save the career prospects for further use</h3></body></html>", "Game Instructions" , JOptionPane.INFORMATION_MESSAGE, Instructions);
         } else if (e.getActionCommand() == "QUIT") {
+
             int input = JOptionPane.showOptionDialog(null, "Are you sure you want to exit?", "Are you sure?", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
             if (input == JOptionPane.OK_OPTION) {
                 System.exit(0);
@@ -416,13 +415,16 @@ public class GUI extends Board implements ActionListener {
                 System.err.println(ex);
             }
 
-            int input = JOptionPane.showOptionDialog(null, "Career prospects have been saved! \n Do you want to exit?", "Career prospects saved", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
+            Icon saved =  new ImageIcon(getClass().getClassLoader().getResource("images/saved.png"));
+            int input = JOptionPane.showOptionDialog(null, "Career prospects have been saved! \n Do you want to exit?", "Career prospects saved", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, saved, null, null);
             if (input == JOptionPane.OK_OPTION) {
                 System.exit(0);
             }
 
         } else if (e.getActionCommand() == "Exit application") {
-            int input = JOptionPane.showOptionDialog(null, "Press CANCEL or OK to exit!", "Are you sure?", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
+            Icon leaving =  new ImageIcon(getClass().getClassLoader().getResource("images/leaving.png"));
+
+            int input = JOptionPane.showOptionDialog(null, "Press CANCEL or OK to exit!", "Are you sure?", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, leaving, null, null);
             if (input == JOptionPane.OK_OPTION) {
                 System.exit(0);
             }
