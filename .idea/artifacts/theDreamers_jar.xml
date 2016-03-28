@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="theDreamers:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/theDreamers_jar</output-path>
-    <root id="archive" name="theDreamers.jar">
-      <element id="module-output" name="theDreamers" />
-      <element id="library" level="module" name="mysql-connector-java-5.1.38-bin.jar" module-name="theDreamers" />
-    </root>
-  </artifact>
-</component>

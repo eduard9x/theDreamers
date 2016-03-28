@@ -431,7 +431,7 @@ public class GUI extends Board implements ActionListener {
         } else if (e.getActionCommand() == "ROLL THE DICE") {
 
             String name = playerName.getText();
-            int randomNumber = 0;
+            int randomNumber;
             randomNumber = rollDice();
             doMove(randomNumber);
 

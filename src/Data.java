@@ -15,7 +15,7 @@ public class Data {
         {
             Formatter output = new Formatter("databaseLocalFile.txt");
 
-            DB_Connect connect = new DB_Connect();
+            databaseManager connect = new databaseManager();
             // delete the previous data
             connect.deleteData();
             // write the new data

@@ -2,16 +2,14 @@
 import javafx.beans.property.adapter.JavaBeanObjectProperty;
 
 import javax.swing.*;
-import java.awt.*;
 import java.io.File;
 import java.util.Scanner;
 
 public class Board {
 
-    //    todo manage the board here
     public final String LEFT = "LEFT", RIGHT = "RIGHT", TOP = "TOP", BOTTOM = "BOTTOM";
     //    square = the position on the board; when reaching 40 it means it finished the first stage
-//    stage = there will be two stages: 1 - College, 2 - University. When the stage increases, the difficulty increases as well.
+    //    stage = there will be two stages: 1 - College, 2 - University. When the stage increases, the difficulty increases as well.
     private int leftX, rightX, topX, bottomX, leftY, rightY, topY, bottomY, playerX, playerY;
     private JButton[][] gameBoard;
     private int square, stage, activeSquare;
