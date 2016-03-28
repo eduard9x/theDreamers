@@ -375,7 +375,7 @@ public class GUI extends Board implements ActionListener {
         //play button
         if (e.getActionCommand() == "PLAY") {
 
-            Game newGame = new Game();
+            Board gameBoard = new Board();
 
             frame2.setVisible(true);
             frame.setVisible(false);

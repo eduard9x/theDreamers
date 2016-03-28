@@ -184,7 +184,7 @@ public class DB_Connect {
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (" + Integer.toString(generateNumbers[11]) + ", 'Simplify: (3-4i)2', " +
                     "'-7-24i', '-8-23i', '-5-21i', '-6-24i', 'Maths')");
             /* 13 */
-            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (" + Integer.toString(generateNumbers[12]) + ", 'If (x+y)+(x-y)=5+3i, find x and y', " +
+            st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (" + Integer.toString(generateNumbers[12]) + ", 'If (x+y)+i(x-y)=5+3i, find x and y', " +
                     "'x=4,y=1', 'x=3,y=2', 'x=1,y=4', 'x=4,y=2', 'Maths')");
             /* 14 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (" + Integer.toString(generateNumbers[13]) + ", 'Express 3(cos15°+isin15°) in the form a+ib.', " +
@@ -227,7 +227,7 @@ public class DB_Connect {
                     " 'A hardware device', 'A software device', 'A terminal device', 'A console device', 'Computer Science')");
             /* 27 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (" + Integer.toString(generateNumbers[26]) + ", 'URL : https://www.westminster.ac.uk/ - State the top-level domain part in the URL.'," +
-                    " 'uk.', '.co', 'www.', 'https:', 'Computer Science')");
+                    " '.uk', '.co', 'www.', 'https:', 'Computer Science')");
             /* 28 */
             st.executeUpdate("INSERT INTO theDreamersTable " + "VALUES (" + Integer.toString(generateNumbers[27]) + ", 'What is the role of a DNS server?'," +
                     " 'To take a required FQDN and to return an IP address.', 'To take a required HTTP and to return an IP address.', 'To take a required IPS and to return an IP address.', 'To take a required Password and to return an IP address.', 'Computer Science')");
