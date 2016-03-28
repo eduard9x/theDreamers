@@ -6,7 +6,5 @@ public class Main {
         //This will be active when getting data from database. Commented out when testing on a different machine.
         Data data = new Data();
         GUI gui = new GUI();
-
     }
-
 }
